@@ -1,0 +1,2 @@
+import{SHA256}from'./sha256';
+self.onmessage=async(event:MessageEvent<File>)=>{try{const file=event.data,h=new SHA256(),sliceBytes=1024*1024;for(let i=0;i<file.size;i+=sliceBytes){h.update(new Uint8Array(await file.slice(i,i+sliceBytes).arrayBuffer()));self.postMessage({progress:Math.min(1,(i+sliceBytes)/file.size),sliceBytes})}self.postMessage({sha256:h.hex(),progress:1,sliceBytes})}catch(e){self.postMessage({error:String(e)})}};
