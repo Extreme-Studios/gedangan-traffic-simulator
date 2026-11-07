@@ -1,0 +1,16 @@
+# M08 execution plan
+
+Only M08. Original M01–M07 inputs and outputs are immutable. Baseline empirical calibration remains blocked; all experiments are synthetic/conditional.
+
+1. Record SHA256 baseline and run the existing234 regression tests. Audit SUMO/NETCONVERT/DUAROUTER1.28.0 and current control/topology limitations.
+2. Close M07 browser QA on desktop1920×1080 and mobile390×844 before M08 UI work. Use copied custom-scenario config and redirect job logs into M08. Preserve prior M07 reports/status as historical records. If browser access is denied, record BLOCKED_BY_ENVIRONMENT and continue backend.
+3. Build stable S00–S07 catalog and strict schema. S00 baseline, S01 bounded signal schedules, S02 narrow existing source movement, S03 restrict existing frontage exit, S04 explicit heavy departure deferral. S05 remains structurally blocked if fewer than two road controllers exist. Railway crossing is not a second arbitrary road-signal controller. S06/S07 remain concept-only pending surveyed feasibility.
+4. Use NETCONVERT permission-only derivative patches for S02/S03 and audited signal-program derivatives for S01. Reject new edges/movements, geometry drift or expanded access. Keep road/rail separation, crossing logic, source lineage and original network intact.
+5. Freeze M07 request cohort and identity before any intervention. Primary evaluation uses2026/2030/2040 REFERENCE. Two independent evaluation seeds42/43 for2026/2040. Signal tuning uses separate2026seed11 and a bounded three-program training grid. Run2035 representative pair if budget permits. LOW/HIGH support is configurable; use a bounded robustness subset rather than exhaustive combinations.
+6. Sequential SUMO process budget180s/run, fixed demand window0–1800s and horizon2100s,step0.5s,warmup0,no optional drain,teleport=-1. Reuse the audited M07 driver in a private module instance. No global mutation of old modules or outputs. Record failures and cache signatures. Heavy time-shift has explicit intervention-only departure schedule differences and deferral accounting, never silently drops requests.
+7. Evaluate complete lifecycle, route failures, queue meter/count/duration, FCD occupancy/speed, perOD/class/frontage/feeder impacts, M051 causal events and full-sample railway/permission safety. Censoring blocks arrived-only improvement claims.
+8. Compare with explicit intervention-aware parity guards: allowed network differences must match the derivative manifest; OD/cohort identity unchanged. Costs,ROW,clearance and physical safety remain unknown. Traffic Pareto screening is distinct from overall feasibility; no defensible overall winner.
+9. Build separate M08 lab(port5183/API8773), actual sequential run queue, honest concept-only/NOT RUN states, paired recorded playback and uncertainty. No M09 live-simulator controls work; playback only.
+10. Run full regression, actual fresh reproduction/cache verification, TypeScript/production build and browser QA where available. Deliver report, README, closure document, manifests and evidence. Do not start M09.
+
+Budget review: primary operational matrix is staged; only completed, valid runs produce metrics. A failed intervention or no improvement is a legitimate result. Concept-only infrastructure receives no invented effectiveness score or currency estimate.
