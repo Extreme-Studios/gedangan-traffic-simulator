@@ -1,0 +1,344 @@
+{
+  "source_status": "PARTIAL",
+  "network_version": "m155-existing-provisional-1",
+  "source_geometry_verified_edges": 1961,
+  "physical_calibration_verified_edges": 0,
+  "government_overlay_features": 23,
+  "geometry_correction": "NONE JUSTIFIED: source alignment within inherited assumptions; no authoritative clearance/median/turn/lane survey to support moving geometry",
+  "parent_sha256": "0b470d7ab9dff823efe96a2e286ec59a6c02b7735db9e653b666b15e567bb53c",
+  "network_sha256": "0b470d7ab9dff823efe96a2e286ec59a6c02b7735db9e653b666b15e567bb53c",
+  "before_topology": {
+    "edges": 5227,
+    "lanes": 5329,
+    "junctions": 1417,
+    "connections": 6159,
+    "rail_edges": 18
+  },
+  "after_topology": {
+    "edges": 5227,
+    "lanes": 5329,
+    "junctions": 1417,
+    "connections": 6159,
+    "rail_edges": 18
+  },
+  "topology_diff": {
+    "edges": 0,
+    "lanes": 0,
+    "junctions": 0,
+    "connections": 0,
+    "rail_edges": 0
+  },
+  "lane_count_diff": 0,
+  "junction_diff": [],
+  "connection_diff": [],
+  "railway_diff": [],
+  "route_compatibility_change_due_to_network": 0,
+  "frontage_m15_anchor_distance_from_crossing_m": 1428.7382933203687,
+  "overlapping_approach_route_edges": {
+    "w72388961_s0_p0_0_f": [
+      "ketajen",
+      "northbound"
+    ],
+    "w72388961_s1_p0_0_f": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s25_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s24_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s23_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s22_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s21_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287931_s20_p0_0_r": [
+      "ketajen",
+      "northbound"
+    ],
+    "w562358499_s0_p0_0_f": [
+      "ketajen",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287938_s0_p0_0_f": [
+      "ketajen",
+      "northbound"
+    ],
+    "w266287935_s0_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s1_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s2_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s3_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s4_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s5_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s6_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287935_s7_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w512351906_s0_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w512351906_s1_p0_0_f": [
+      "ketajen",
+      "northbound",
+      "sukodono"
+    ],
+    "w266287934_s0_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287934_s1_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w1240685448_s0_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w1240685448_s1_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w1240685448_s1_p1_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w1240685448_s1_p2_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s0_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s0_p1_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s1_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s2_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s3_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s4_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s5_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s6_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s7_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s8_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w266287937_s9_p0_0_f": [
+      "rail_crossing",
+      "southbound",
+      "sukodono"
+    ],
+    "w1120346135_s0_p0_0_f": [
+      "southbound",
+      "sukodono"
+    ],
+    "w160009748_s0_p0_0_f": [
+      "southbound",
+      "sukodono"
+    ],
+    "w160009748_s1_p0_0_f": [
+      "southbound",
+      "sukodono"
+    ]
+  },
+  "naming_reference_points": [
+    {
+      "id": "UIN-S3",
+      "label": "Jenggolo eastbound reference2023",
+      "lon": 112.72825,
+      "lat": -7.389555555555556,
+      "source": "https://digilib.uinsa.ac.id/63857/2/Nurul%20Aulia%20Fadilah_H95219051%20ok.pdf",
+      "pdf_page": 69,
+      "point": [
+        -37.93017327913549,
+        -62.85972995311022
+      ],
+      "nearest_sumo_edge": "w266287934_s1_p0_0_f",
+      "nearest_sumo_name": "Jalan Raya Ketajen",
+      "distance_m": 6.027947255524905,
+      "status": "PROVISIONAL_ALIAS_CANDIDATE; spatial near-match, no authoritative current name/turn replacement"
+    },
+    {
+      "id": "UIN-S4",
+      "label": "Jenggolo westbound reference2023",
+      "lon": 112.72822222222223,
+      "lat": -7.389713888888889,
+      "source": "https://digilib.uinsa.ac.id/63857/2/Nurul%20Aulia%20Fadilah_H95219051%20ok.pdf",
+      "pdf_page": 69,
+      "point": [
+        -41.064955926616676,
+        -80.35908042639494
+      ],
+      "nearest_sumo_edge": "w266287927_s0_p0_0_f",
+      "nearest_sumo_name": "Jalan Raya Ketajen",
+      "distance_m": 4.652290734416903,
+      "status": "PROVISIONAL_ALIAS_CANDIDATE; spatial near-match, no authoritative current name/turn replacement"
+    }
+  ],
+  "station": {
+    "source_osm_node": 1359952188,
+    "name": "Gedangan",
+    "geographic_coordinates": [
+      112.7285913,
+      -7.3889859
+    ],
+    "point": [
+      -0.00414496473968029,
+      -0.0035519320517778397
+    ],
+    "nearby_roads": [
+      {
+        "edge": "w1120215176_s1_p0_0_f",
+        "name": "Jalan Frontage Gedangan",
+        "role": "frontage_road",
+        "distance_m": 18.132015503230708
+      },
+      {
+        "edge": "w1120215175_s0_p0_0_f",
+        "name": "Jalan Frontage Gedangan",
+        "role": "frontage_road",
+        "distance_m": 35.897650809236744
+      },
+      {
+        "edge": "w1188011989_s0_p0_0_f",
+        "name": "Jalan Frontage Gedangan",
+        "role": "frontage_road",
+        "distance_m": 42.782039463282445
+      },
+      {
+        "edge": "w266287937_s0_p1_0_f",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 47.85055998498751
+      },
+      {
+        "edge": "w266287937_s0_p0_0_f",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 47.96339591234872
+      },
+      {
+        "edge": "w1240685448_s1_p2_0_f",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 50.05733955846238
+      },
+      {
+        "edge": "w266287937_s0_p1_0_r",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 51.04386158527063
+      },
+      {
+        "edge": "w266287937_s0_p0_0_r",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 51.158967002169376
+      },
+      {
+        "edge": "w701021821_s0_p0_0_r",
+        "name": "Jalan Mawar",
+        "role": "local_access_road",
+        "distance_m": 52.20430431280219
+      },
+      {
+        "edge": "w1240685448_s1_p2_0_r",
+        "name": "Jalan Raya Ketajen",
+        "role": "feeder_road",
+        "distance_m": 52.58785665115998
+      }
+    ],
+    "access_status": "PROVISIONAL: nearby road is not proof of a legal station gate/vehicle entrance"
+  },
+  "rail_status": "Only inherited N_TO_S graph exists. External paper describes more complex station/crossing context; no reverse track fabricated. Physical clearance/gates/stop lines require field check.",
+  "missing_movement_categories": [
+    "Model connection present but omitted at stop-line anchor: fixed in M15 catalog",
+    "Mapped direct U-turn elsewhere: inspectable but not promoted to default macro route",
+    "No modeled connection: absence in model, legal status may be UNKNOWN",
+    "Source conversion loss: not proven from maps alone; no fabricated repair"
+  ],
+  "visual_quality": "PENDING; retained simplified vehicle/context geometry, no premium redesign"
+}
