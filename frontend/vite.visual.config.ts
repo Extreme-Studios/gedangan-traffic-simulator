@@ -1,0 +1,1 @@
+import{defineConfig}from'vite';import react from'@vitejs/plugin-react';export default defineConfig({plugins:[react()],publicDir:false,build:{outDir:'dist-m10',rollupOptions:{input:'visual.html'}},server:{host:'127.0.0.1',port:5186,strictPort:true,proxy:{'/api/m10':{target:'http://127.0.0.1:8776',changeOrigin:false},'/cache':{target:'http://127.0.0.1:8776',changeOrigin:false}}}});

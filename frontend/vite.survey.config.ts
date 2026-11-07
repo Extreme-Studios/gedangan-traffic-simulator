@@ -1,0 +1,1 @@
+import{defineConfig}from'vite';import react from'@vitejs/plugin-react';export default defineConfig({plugins:[react()],publicDir:false,build:{outDir:'dist-m085',rollupOptions:{input:'survey.html'}},server:{host:'127.0.0.1',port:5184,strictPort:true,proxy:{'/api/m085':{target:'http://127.0.0.1:8774',changeOrigin:false}}}});
