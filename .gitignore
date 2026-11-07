@@ -1,0 +1,27 @@
+# Dependencies and generated builds
+.venv/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+frontend/dist*/
+# Large local research/runtime outputs
+toolchain/
+FINAL_RELEASE/
+simulation/runs/
+presentation_demo/**/build/
+staging/**
+!staging/m1562/
+!staging/m1562/portable/
+!staging/m1562/portable/*.py
+!staging/m1562/portable/*.cs
+# Secrets, recordings and databases
+.env
+.env.*
+*.log
+*.zip
+*.7z
+*.exe
+*.dll
+*.mp4
+*.sqlite*
+*.db
