@@ -1,0 +1,6 @@
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'documentation/storage_cleanup'
+before=json.loads((ROOT/'STORAGE_INVENTORY_BEFORE.json').read_text());by={f['path']:f for f in before['files']};paths=['FINAL_RELEASE/GEDANGAN_TRAFFIC_SIMULATOR/APPLICATION/_internal/jsonschema_specifications/tests/'+n for n in ['test_jsonschema_specifications.py','__init__.py']]
+rows=[{**by[p],'classification':'B','reason':'Upstream pytest-only source copied by collect_all; no application imports tests; schemas/REGISTRY runtime retained','dependency_references':['Imports pytest and declares only test_* functions; audited m12_host/m085/M06 paths use REGISTRY/schema validators only'],'recovery_or_rebuild_method':'Original M12 ZIP before cleanup hash and retained PyInstaller build-env package source; freeze spec regenerates collect_all data','canonical_copy':'documentation/m12/build-env/Lib/site-packages/jsonschema_specifications/tests/'+Path(p).name,'confidence':'HIGH','action':'DELETE_FILE_DRY_RUN'}for p in paths]
+(OUT/'RELEASE_TRIM_DRY_RUN.json').write_text(json.dumps({'status':'DRY_RUN_VERIFIED','files':rows},indent=2));print(json.dumps({'files':2,'bytes':sum(r['bytes']for r in rows),'changes':'Only two pytest source data files; EXE unchanged. Runtime/build/ZIP manifests will be refreshed.'}))
