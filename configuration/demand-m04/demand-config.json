@@ -1,0 +1,48 @@
+{
+  "schema_version": "m04-1",
+  "category": "SYNTHETIC_TEST",
+  "baseline_year": 2026,
+  "seed": 20261031,
+  "interval_seconds": 900,
+  "profiles": {
+    "low": {
+      "requested_per_interval": 40,
+      "reason": "First software smoke; fewer than 50 requested, no field meaning."
+    },
+    "medium": {
+      "requested_per_interval": 120,
+      "reason": "Three times low to test conservation/insertion."
+    },
+    "stress": {
+      "requested_per_interval": 300,
+      "reason": "Bounded 300 request software stress, only after smaller runs measured; not peak-hour demand."
+    }
+  },
+  "departure_profile": "uniform_stratified_jitter",
+  "composition": {
+    "motorcycle": 0.2,
+    "car": 0.4,
+    "pickup_van": 0.08,
+    "minibus": 0.06,
+    "bus": 0.04,
+    "light_truck": 0.06,
+    "medium_truck": 0.04,
+    "heavy_truck": 0.04,
+    "trailer": 0.04,
+    "oversize": 0.04
+  },
+  "simulation_end_seconds": 2100,
+  "step_length_seconds": 1,
+  "trajectory_period_seconds": 5,
+  "year_dimensions": {
+    "baseline_year": 2026,
+    "future_growth_records": [],
+    "future_keys": [
+      "year",
+      "od_id",
+      "vehicle_type_id"
+    ],
+    "projection_implemented": false
+  },
+  "warning_label": "SYNTHETIC TEST — NOT CALIBRATED GEDANGAN TRAFFIC"
+}

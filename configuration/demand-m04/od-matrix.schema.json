@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "baseline_year",
+    "category",
+    "interval_seconds",
+    "movements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "m04-1"
+    },
+    "baseline_year": {
+      "const": 2026
+    },
+    "category": {
+      "const": "SYNTHETIC_TEST"
+    },
+    "interval_seconds": {
+      "const": 900
+    },
+    "movements": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "origin_zone",
+          "destination_zone",
+          "weight",
+          "confidence",
+          "provenance_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "origin_zone": {
+            "type": "string"
+          },
+          "destination_zone": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "confidence": {
+            "const": "ASSUMPTION"
+          },
+          "provenance_id": {
+            "const": "A-ZONE-01"
+          }
+        }
+      }
+    }
+  }
+}

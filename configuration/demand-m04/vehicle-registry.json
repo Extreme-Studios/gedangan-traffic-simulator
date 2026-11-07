@@ -1,0 +1,1158 @@
+{
+  "schema_version": "m04-1",
+  "baseline_year": 2026,
+  "category": "ASSUMPTION",
+  "reference": "https://eclipse.dev/sumo/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+  "vehicles": [
+    {
+      "id": "motorcycle",
+      "label": "Sepeda motor",
+      "sumo_vclass": "motorcycle",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "motorcycle",
+        "length": 2.1,
+        "width": 0.8,
+        "height": 1.4,
+        "maxSpeed": 16.67,
+        "accel": 2.0,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 1.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road",
+          "frontage_road",
+          "feeder_road",
+          "collector_road",
+          "local_access_road",
+          "service_road",
+          "connector_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 1.2000000000000002,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "car",
+      "label": "Mobil penumpang",
+      "sumo_vclass": "passenger",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "passenger",
+        "length": 4.5,
+        "width": 1.8,
+        "height": 1.5,
+        "maxSpeed": 22.22,
+        "accel": 2.0,
+        "decel": 4.5,
+        "emergencyDecel": 8,
+        "minGap": 2.5,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road",
+          "frontage_road",
+          "feeder_road",
+          "collector_road",
+          "local_access_road",
+          "service_road",
+          "connector_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.2,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "pickup_van",
+      "label": "Pickup dan van",
+      "sumo_vclass": "delivery",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "delivery",
+        "length": 5.2,
+        "width": 1.9,
+        "height": 2.1,
+        "maxSpeed": 19.44,
+        "accel": 1.8,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 2.5,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road",
+          "frontage_road",
+          "feeder_road",
+          "collector_road",
+          "local_access_road",
+          "service_road",
+          "connector_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.3,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "minibus",
+      "label": "Angkutan umum/minibus",
+      "sumo_vclass": "bus",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "bus",
+        "length": 6.0,
+        "width": 2.0,
+        "height": 2.5,
+        "maxSpeed": 16.67,
+        "accel": 1.5,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 2.5,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road",
+          "frontage_road",
+          "feeder_road",
+          "collector_road",
+          "local_access_road",
+          "service_road",
+          "connector_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.4,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "sumo_vclass": "bus",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "bus",
+        "length": 12.0,
+        "width": 2.5,
+        "height": 3.5,
+        "maxSpeed": 16.67,
+        "accel": 1.2,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 3.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.9,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "light_truck",
+      "label": "Truk ringan",
+      "sumo_vclass": "truck",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "truck",
+        "length": 6.5,
+        "width": 2.1,
+        "height": 2.6,
+        "maxSpeed": 16.67,
+        "accel": 1.3,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 3.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road",
+          "frontage_road",
+          "feeder_road",
+          "collector_road",
+          "local_access_road",
+          "service_road",
+          "connector_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.5,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "medium_truck",
+      "label": "Truk sedang",
+      "sumo_vclass": "truck",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "truck",
+        "length": 8.5,
+        "width": 2.4,
+        "height": 3.2,
+        "maxSpeed": 16.67,
+        "accel": 1.1,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 3.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.8,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "heavy_truck",
+      "label": "Truk berat",
+      "sumo_vclass": "truck",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "truck",
+        "length": 11.5,
+        "width": 2.5,
+        "height": 3.8,
+        "maxSpeed": 13.89,
+        "accel": 0.9,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 3.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.9,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "trailer",
+      "label": "Trailer dan kontainer",
+      "sumo_vclass": "trailer",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "trailer",
+        "length": 16.5,
+        "width": 2.55,
+        "height": 4.0,
+        "maxSpeed": 13.89,
+        "accel": 0.8,
+        "decel": 4.0,
+        "emergencyDecel": 7,
+        "minGap": 3.5,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": false,
+        "minimum_lane_width_m": 2.9499999999999997,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    },
+    {
+      "id": "oversize",
+      "label": "Oversize/khusus",
+      "sumo_vclass": "trailer",
+      "category": "ASSUMPTION",
+      "calibration_status": "NOT_CALIBRATED",
+      "parameters": {
+        "vClass": "trailer",
+        "length": 20.0,
+        "width": 3.0,
+        "height": 4.5,
+        "maxSpeed": 8.33,
+        "accel": 0.6,
+        "decel": 3.5,
+        "emergencyDecel": 6,
+        "minGap": 4.0,
+        "tau": 1.2,
+        "sigma": 0.3,
+        "carFollowModel": "Krauss",
+        "laneChangeModel": "LC2013",
+        "speedFactor": 1.0,
+        "speedDev": 0.0
+      },
+      "parameter_provenance": {
+        "vClass": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "length": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "width": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "height": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "maxSpeed": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "accel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "decel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "emergencyDecel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "minGap": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "tau": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "sigma": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "carFollowModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "laneChangeModel": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedFactor": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        },
+        "speedDev": {
+          "status": "ASSUMPTION",
+          "provenance_id": "A-VEH-01",
+          "reason": "Technical test fixture; nominal dimensions/dynamics chosen for size differentiation, not measured Gedangan values. vClass/model mapping follows installed SUMO syntax."
+        }
+      },
+      "eligibility": {
+        "require_lane_permission": true,
+        "require_source_motor_vehicle_access": true,
+        "allowed_road_functions": [
+          "main_arterial_road"
+        ],
+        "require_surveyed_geometry_and_legal_clearance": true,
+        "minimum_lane_width_m": 3.4,
+        "geometry_status": "ASSUMPTION_SCREEN_ONLY_NOT_SWEPT_PATH",
+        "provenance_id": "A-ELIG-01"
+      }
+    }
+  ]
+}

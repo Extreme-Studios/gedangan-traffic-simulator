@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": "A-VEH-01",
+      "category": "ASSUMPTION",
+      "source": "https://eclipse.dev/sumo/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+      "reason": "Nominal test parameters; syntax checked against installed SUMO 1.28 XSD and parser; not imported default values or survey."
+    },
+    {
+      "id": "A-ELIG-01",
+      "category": "ASSUMPTION",
+      "reason": "Conservative size screen: large classes arterial only, lane width > vehicle width + .4m. No geometric/permit clearance available for oversize; blocked."
+    },
+    {
+      "id": "A-ZONE-01",
+      "category": "ASSUMPTION",
+      "reason": "OD anchors use M03 test endpoints and source geometry. Zone boundary and trip distribution are software fixtures, not travel survey."
+    },
+    {
+      "id": "S-DEMAND-01",
+      "category": "SYNTHETIC_TEST",
+      "reason": "40/120/300 total requests in one 900-second interval; fixed composition and seed. Not observed traffic."
+    },
+    {
+      "id": "R-M03-01",
+      "category": "RESEARCH_REFERENCE",
+      "source": "simulation/network/m03/network-manifest.json",
+      "reason": "Immutable M03 source topology and permissions; OSM-referenced, not field legal verification."
+    }
+  ],
+  "observed_records": [],
+  "observed_data_written": false
+}

@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object", "required":["schema_version","coverage_fixture","rows"],
+  "properties":{
+    "schema_version":{"const":"m04-1"},"coverage_fixture":{"type":"boolean"},
+    "rows":{"type":"array","items":{"type":"object","required":["year","network_variant","od_id","vehicle_type_id","origin_zone","destination_zone","interval_start_seconds","interval_end_seconds","requested_trips","routable_trips","failed_routes","input_category","routing_category","provenance_id"],"properties":{
+      "year":{"type":"integer","minimum":2026},"network_variant":{"enum":["strict","provisional"]},"od_id":{"type":"string"},"vehicle_type_id":{"type":"string"},"origin_zone":{"type":"string"},"destination_zone":{"type":"string"},
+      "interval_start_seconds":{"type":"integer","minimum":0,"multipleOf":900},"interval_end_seconds":{"type":"integer","minimum":900,"multipleOf":900},
+      "requested_trips":{"type":"integer","minimum":0},"routable_trips":{"type":"integer","minimum":0},"failed_routes":{"type":"integer","minimum":0},
+      "input_category":{"const":"SYNTHETIC_TEST"},"routing_category":{"const":"SIMULATED_RESULT"},"provenance_id":{"const":"S-DEMAND-01"}
+    }}}
+  }
+}
