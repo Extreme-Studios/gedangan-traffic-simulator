@@ -1,0 +1,33 @@
+:root{color-scheme:dark}
+body{background:#101c24;color:#e4ecee}
+.simple-app{max-width:1520px;margin:auto;padding:24px}
+.simple-header{padding:0 0 20px;margin-bottom:20px;border-color:#314550}
+.simple-header span{color:#9bb1bb}
+.simple-header h1{font-size:28px;letter-spacing:-.5px;color:#f0f4f5}
+.simple-header p{font-size:14px;color:#b1c4cc}
+.simple-input{background:#1b2e39;border:1px solid #3c5665;border-radius:10px;padding:22px}
+.simple-input>label{font-size:16px;font-weight:600;margin:0 0 10px}
+.simple-entry{display:flex;gap:12px;max-width:660px}
+.simple-entry input{background:#10232e;color:#fff;border-color:#608294;font-size:26px;flex:1;min-width:100px;padding:12px}
+.simple-entry button{background:#d5b477;color:#18252c;font-size:15px;padding:14px 22px;border:0}
+.simple-input small{display:block;margin-top:8px;color:#a9bec8}
+.simple-mix{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:20px}
+.simple-mix>div,.simple-results>div{display:flex;flex-direction:column;padding:10px 12px;border-left:2px solid #648b8b;background:#142832}
+.simple-mix span,.simple-results span{font-size:12px;color:#b6c9d1}
+.simple-mix b{font-size:20px}
+.simple-note{font-size:12px;color:#b2c3c9;margin:16px 0 0;max-width:950px}
+.simple-status{font-size:13px;color:#cbb17d;min-height:20px}
+.simple-error{background:#542e2e;padding:14px;color:#ffe0d9;border-radius:6px}
+.simple-results{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:16px}
+.simple-results b{font-size:23px}
+.simple-scene{padding:0;background:#142832;border-color:#3c5665;overflow:hidden}
+.simple-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px}
+.simple-controls button,.simple-controls select{background:#263f4e;color:#edf2f4;border-color:#496374}
+.simple-controls label{display:flex;flex-direction:row;align-items:center;gap:8px;margin:0}
+.simple-controls select{width:200px}
+.simple-controls span{margin-left:auto;font-size:12px;color:#a9c0cc}
+.simple-scene .viewport{height:620px;min-height:360px}
+.simple-empty{display:grid;place-items:center;height:100%;color:#adbdc5}
+.simple-app footer{color:#a5b6be;font-size:11px}
+.simple-app button:focus-visible,.simple-app input:focus-visible,.simple-app select:focus-visible{outline:3px solid #e0ba75;outline-offset:3px}
+@media(max-width:700px){.simple-app{padding:12px}.simple-entry{flex-direction:column}.simple-mix,.simple-results{grid-template-columns:repeat(3,1fr)}.simple-header h1{font-size:23px}.simple-scene .viewport{height:450px}.simple-controls span{margin-left:0}.simple-controls select{width:170px}}
