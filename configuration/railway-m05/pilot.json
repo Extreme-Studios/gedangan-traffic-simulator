@@ -1,0 +1,27 @@
+{
+  "category": "ASSUMPTION",
+  "provenance_id": "M05-CONTROL-01",
+  "signal": {
+    "green": 12,
+    "yellow": 3,
+    "all_red": 2,
+    "offset": 0
+  },
+  "crossing": {
+    "time-gap": 15,
+    "space-gap": -1,
+    "min-green-time": 5,
+    "opening-delay": 3,
+    "opening-time": 3,
+    "yellow-time": 3
+  },
+  "train": {
+    "vClass": "rail",
+    "length": 80,
+    "width": 2.8,
+    "maxSpeed": 8,
+    "accel": 0.6,
+    "decel": 1
+  },
+  "warning": "Synthetic software test; no field timing, schedule, track count or legality inference."
+}
