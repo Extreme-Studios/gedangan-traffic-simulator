@@ -1,0 +1,4 @@
+/* Release-only fix for observed mobile intrinsic grid overflow. */
+.layout,aside,aside nav,main,.sticky-session,.statusbar,.demo{min-width:0;max-width:100%}
+.demo,.badge,code{overflow-wrap:anywhere}
+@media(max-width:850px){.layout{grid-template-columns:minmax(0,1fr)}aside nav{width:100%;overflow-x:auto}aside button{flex-shrink:0}.sticky-session select{max-width:100%}.video-two>*{min-width:0}.notice,.demo{white-space:normal}.toolbar button{max-width:100%}}

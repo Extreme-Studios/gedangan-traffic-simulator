@@ -1,0 +1,2 @@
+/* M12 adapter: limit drawing resolution; unchanged M10 geometry/traces/materials. */
+(()=>{if(parent!==window)document.documentElement.classList.add('m12-embedded');const presets={performance:.75,balanced:1,presentation:1.5},quality=localStorage.getItem('m12-quality')||'balanced';try{Object.defineProperty(window,'devicePixelRatio',{get:()=>presets[quality]||1,configurable:true})}catch{}window.M12_QUALITY={preset:quality,pixelRatio:presets[quality]||1};})();

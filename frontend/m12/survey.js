@@ -1,0 +1,2 @@
+/* Current release labels. Original M08.5 static build remains byte-identical. */
+(()=>{function update(){for(const el of document.querySelectorAll('.badge')){if(el.textContent==='M09 BELUM DIMULAI')el.textContent='M08.5 WORKBENCH · M12 RELEASE';if(el.textContent==='SYSTEM: PARTIAL · QA browser pending')el.textContent='M12 BROWSER QA PASS · FIELD VALIDATION PENDING'}}new MutationObserver(update).observe(document.documentElement,{childList:true,subtree:true});update()})();

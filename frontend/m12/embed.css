@@ -1,0 +1,11 @@
+/* M12 window layout only. M10 renderer/build remains unchanged. */
+html.m12-embedded,html.m12-embedded body,html.m12-embedded #root{height:100%;margin:0}
+.m12-embedded .app>header,.m12-embedded .app>.validity,.m12-embedded .app>main>.heading{display:none}
+.m12-embedded .app{height:100vh;overflow:auto}
+.m12-embedded .app>main{padding:8px 12px;max-width:none}
+.m12-embedded .controls{padding:7px 10px;gap:8px}
+.m12-embedded .viewport{height:calc(100vh - 245px);min-height:190px;max-height:none}
+.m12-embedded .scene-toolbar{padding:6px 10px}
+.m12-embedded .scene-bottom{padding:5px 10px}
+.m12-embedded .visual:fullscreen .viewport{height:auto;min-height:0}
+@media(max-height:650px){.m12-embedded .scene-toolbar{gap:6px}.m12-embedded .scene-toolbar button{padding:5px 8px}.m12-embedded .scene-bottom{font-size:10px}.m12-embedded .compare-banner{font-size:10px;padding:5px 10px}.m12-embedded .viewport.split{height:calc(100vh - 280px)}}
