@@ -1,0 +1,21 @@
+"""Censored cohorts stay in lifecycle/partial metrics; arrived-only metrics labeled."""
+import statistics
+from collections import Counter
+def distribution(values):
+ values=sorted(values)
+ if not values:return {'n':0,'mean':None,'p50':None,'p90':None,'min':None,'max':None}
+ return {'n':len(values),'mean':statistics.mean(values),'p50':values[(len(values)-1)//2],'p90':values[int((len(values)-1)*.9)],'min':values[0],'max':values[-1]}
+def lifecycle_metrics(rows,trips,loaded,departed,arrived,running,pending,moved):
+ n=len(rows);routable={r['id'] for r in rows if r['route_status']=='ROUTABLE'};not_departed=routable-departed
+ if routable!=arrived|running|not_departed or arrived&running or departed!=arrived|running:raise ValueError('Lifecycle conservation failed')
+ if set(trips)!=routable:raise ValueError('SUMO unfinished/undeparted parser did not retain every accepted trip')
+ if any((float(t['depart'])>=0)!=(vid in departed) or (float(t['arrival'])>=0)!=(vid in arrived) for vid,t in trips.items()):raise ValueError('SUMO XML lifecycle disagreement')
+ cohorts={}
+ for od in sorted({r['od_id'] for r in rows}):
+  rr=[r for r in rows if r['od_id']==od];ids={r['id'] for r in rr};served=ids&departed;completed=ids&arrived
+  cohorts[od]={'requested':len(ids),'routable':len(ids&routable),'failed_routes':len(ids-routable),'departed':len(ids&departed),'arrived':len(completed),'running':len(ids&running),'not_departed':len(ids&not_departed),'routable_fraction':len(ids&routable)/len(ids),'completed_trip_duration_s_arrived_only':distribution([float(trips[i]['duration']) for i in completed]),'elapsed_trip_duration_s_departed_including_unfinished':distribution([float(trips[i]['duration']) for i in served]),'waiting_s_departed_including_unfinished':distribution([float(trips[i]['waitingTime']) for i in served]),'time_loss_s_departed_including_unfinished':distribution([float(trips[i]['timeLoss']) for i in served]),'depart_delay_s_accepted_including_undeparted':distribution([float(trips[i]['departDelay']) for i in ids&routable])}
+ return {'requested':n,'routable':len(routable),'failed_routes':n-len(routable),'loaded':len(loaded),'departed':len(departed),'arrived':len(arrived),'running_at_end':len(running),'not_departed':len(not_departed),'pending_in_sumo':len(pending),'moved':len(moved),'unserved_total_at_horizon':n-len(arrived),'censored':bool(running or not_departed),'diagnostic':'DEMAND EXCEEDS INSERTION OR NETWORK CAPACITY (fixed model horizon)' if running or not_departed else 'COMPLETED_ROUTABLE_COHORT; route failures remain unserved','od':cohorts,'failed_route_reasons':dict(Counter(r['reason'] for r in rows if r['route_status']!='ROUTABLE')),'class_lifecycle':{cls:{k:sum(1 for r in rows if r['vehicle_type_id']==cls and r['id'] in ids) for k,ids in [('requested',{r['id'] for r in rows}),('routable',routable),('departed',departed),('arrived',arrived),('moved',moved)]} for cls in sorted({r['vehicle_type_id'] for r in rows})}}
+def compare(a,b):
+ keys=['network_sha256','baseline_hash','seed','fixed_horizon_s','demand_window_s','options']
+ differences=[k for k in keys if a[k]!=b[k]]
+ return {'a':a['run_id'],'b':b['run_id'],'comparable_for_pure_growth':not differences,'mismatches':differences,'warning':'CENSORED/UNSERVED — do not interpret arrived-only travel-time decline as improved performance' if a['censored'] or b['censored'] or a['failed_routes'] or b['failed_routes'] else None,'demand_delta':b['requested']-a['requested'],'throughput_delta':b['arrived']-a['arrived'],'queue_count_delta':b['max_stopped_count']-a['max_stopped_count'],'queue_extent_delta_m':b['max_lane_queue_extent_m']-a['max_lane_queue_extent_m'],'spillback_event_delta':b['verified_in_model_spillback']-a['verified_in_model_spillback'],'od_deltas':{k:{'demand':b['od'][k]['requested']-a['od'][k]['requested'],'arrived':b['od'][k]['arrived']-a['od'][k]['arrived'],'arrived_only_mean_trip_delta_s':None if a['censored'] or b['censored'] else (b['od'][k]['completed_trip_duration_s_arrived_only']['mean']-a['od'][k]['completed_trip_duration_s_arrived_only']['mean'] if a['od'][k]['completed_trip_duration_s_arrived_only']['mean'] is not None and b['od'][k]['completed_trip_duration_s_arrived_only']['mean'] is not None else None)} for k in a['od'] if k in b['od']}}

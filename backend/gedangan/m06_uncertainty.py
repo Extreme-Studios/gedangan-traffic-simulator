@@ -1,0 +1,13 @@
+"""Finite grid sensitivity and uncertainty dimensions, without field precision claims."""
+import statistics
+from .m04_demand import ROOT,load,save
+def analyze():
+ result=load(ROOT/'documentation/m06/synthetic-recovery.json');trials=result['trials'];best=result['best']['parameters'];derivatives=[]
+ for param in ['vehicle_count','speed_factor']:
+  selected=sorted([t for t in trials if all(t['parameters'][p]==v for p,v in best.items() if p!=param)],key=lambda t:t['parameters'][param]);lo,hi=selected[0],selected[-1];dx=hi['parameters'][param]-lo['parameters'][param]
+  derivatives.append({'parameter':param,'low':lo['parameters'][param],'high':hi['parameters'][param],'metric_derivatives':{k:(hi['prediction'][k]-lo['prediction'][k])/dx if hi['prediction'][k] is not None and lo['prediction'][k] is not None else None for k in hi['prediction']},'method':'Centered secant across tested bounded grid; not a confidence interval or empirical local derivative.'})
+ det=derivatives[0]['metric_derivatives']['traffic_counts']*derivatives[1]['metric_derivatives']['travel_times']-derivatives[1]['metric_derivatives']['traffic_counts']*derivatives[0]['metric_derivatives']['travel_times']
+ runs=[load(p) for p in (ROOT/'simulation/runs/m06/trials').glob('*/result.json')];chosen=[r for r in runs if r['parameters']==best and r.get('runner_version')=='m06-2']
+ uncertainty={'label':result['label'],'sensitivity':derivatives,'two_metric_jacobian_determinant':det,'identifiable_in_fixture':abs(det)>1e-9,'seed_variability':{k:{'min':min(r['metrics'][k] for r in chosen),'max':max(r['metrics'][k] for r in chosen),'mean':statistics.mean(r['metrics'][k] for r in chosen)} for k in ['traffic_counts','travel_times','waiting_times','queue_lengths']},'observation_quality':'UNKNOWN — no field observations','network_geometry':'STRUCTURAL BLOCKERS/NEEDS SURVEY; no optimization hides crossing short-edge storage','OD_uncertainty':'UNKNOWN; synthetic fixture OD is not Gedangan OD','scenario_structural_uncertainty':'Single straight road has no junction/railway/spillback; zero queue/spillback derivatives do not identify congested behavior','parameter_uncertainty':'Finite tested grid only; no empirical CI/posterior or true human tau/minGap estimate','confounding':['Demand vs signal capacity cannot be separated without counts and measured timing','Speed vs travel time may be separable only with matched routes and geometry','OD routing vs turning counts requires class/movement counts and route coverage'],'randomness_vs_missing_data':'Seed spread measures simulation randomness only, not missing evidence uncertainty'}
+ save(ROOT/'documentation/m06/uncertainty.json',uncertainty);return uncertainty
+if __name__=='__main__':analyze()
