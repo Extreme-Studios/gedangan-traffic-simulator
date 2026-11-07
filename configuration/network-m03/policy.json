@@ -1,0 +1,21 @@
+{
+  "version":"m03-1", "sumo_version":"1.28.0", "baseline_year":2026,
+  "storage_crs":"EPSG:4326", "analysis_crs":"EPSG:32749",
+  "strict_unknown_direction":"exclude",
+  "documented_implied_oneway":["junction=roundabout","highway=motorway"],
+  "provisional_bidirectional_highways":["secondary","tertiary","unclassified","residential","living_street","service","road"],
+  "excluded_access_values":["no","private","destination","customers","delivery","agricultural","forestry","permit"],
+  "temporary_lanes_per_direction":1, "temporary_speed_m_per_s":8.333333,
+  "temporary_lane_width_m":3.2, "temporary_priority":1, "temporary_junction_radius_m":0.1,
+  "left_hand_traffic":true,
+  "strict_cross_way_continuity_max_degrees":45,
+  "provisional_max_deflection_degrees":165,
+  "uturns":"excluded", "conditional_restrictions":"conservatively apply all times",
+  "via_way_restrictions":"conservative entry quarantine from from-way into any via-way; may overrestrict valid movements",
+  "barriers":"block passenger transitions at mapped barrier nodes unless cattle_grid; no bypass geometry",
+  "signals":"source positions retained; priority placeholder only, no invented signal plan",
+  "railways":"static georeferenced overlay only; no rail simulation or closure events",
+  "legal_validation":"OSM-referenced topology only; no field-validated legal-turn or lane-use claim",
+  "no_typemap":true,
+  "references":["https://wiki.openstreetmap.org/wiki/Key:oneway","https://eclipse.dev/sumo/docs/Networks/PlainXML.html","https://eclipse.dev/sumo/docs/duarouter.html"]
+}
