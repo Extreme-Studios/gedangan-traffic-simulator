@@ -1,0 +1,18 @@
+{
+  "id": "S02",
+  "version": "m08-1",
+  "name": "Existing feeder left-turn closure",
+  "kind": "OPERATIONAL",
+  "status": "SIMULATION_READY_PROVISIONAL",
+  "operation": "movement_restriction",
+  "parameters": {
+    "from": "w266287930_s0_p1_0_f",
+    "to": "w266287935_s0_p0_0_f"
+  },
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": []
+}

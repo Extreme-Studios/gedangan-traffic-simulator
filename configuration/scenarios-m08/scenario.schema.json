@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "name",
+    "kind",
+    "status",
+    "operation",
+    "parameters",
+    "provenance",
+    "assumptions",
+    "blockers"
+  ],
+  "properties": {
+    "id": {
+      "enum": [
+        "S00",
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "OPERATIONAL",
+        "INFRASTRUCTURE_CONCEPT"
+      ]
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "CONCEPT_ONLY",
+        "STRUCTURALLY_BLOCKED",
+        "SIMULATION_READY_PROVISIONAL",
+        "SIMULATED",
+        "NEEDS_FIELD_VERIFICATION"
+      ]
+    },
+    "operation": {
+      "enum": [
+        "baseline",
+        "signal",
+        "movement_restriction",
+        "frontage_restriction",
+        "heavy_deferral",
+        "coordination",
+        "flyover",
+        "underpass"
+      ]
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

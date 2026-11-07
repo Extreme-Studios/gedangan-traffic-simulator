@@ -1,0 +1,27 @@
+{
+  "id": "S04",
+  "version": "m08-1",
+  "name": "Heavy vehicles deferred from first15min",
+  "kind": "OPERATIONAL",
+  "status": "SIMULATION_READY_PROVISIONAL",
+  "operation": "heavy_deferral",
+  "parameters": {
+    "classes": [
+      "light_truck",
+      "medium_truck",
+      "heavy_truck",
+      "trailer"
+    ],
+    "restricted_window_s": [
+      0,
+      900
+    ],
+    "deferral_s": 900
+  },
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": []
+}

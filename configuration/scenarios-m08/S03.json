@@ -1,0 +1,18 @@
+{
+  "id": "S03",
+  "version": "m08-1",
+  "name": "Existing frontage exit closure",
+  "kind": "OPERATIONAL",
+  "status": "SIMULATION_READY_PROVISIONAL",
+  "operation": "frontage_restriction",
+  "parameters": {
+    "from": "w1188011989_s0_p0_0_f",
+    "to": "w266287937_s0_p0_0_f"
+  },
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "S05",
+  "version": "m08-1",
+  "name": "Corridor coordination",
+  "kind": "OPERATIONAL",
+  "status": "STRUCTURALLY_BLOCKED",
+  "operation": "coordination",
+  "parameters": {},
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": [
+    "Only one road signal controller; railway crossing cannot be treated as a second arbitrary road controller"
+  ]
+}

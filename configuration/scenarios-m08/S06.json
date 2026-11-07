@@ -1,0 +1,17 @@
+{
+  "id": "S06",
+  "version": "m08-1",
+  "name": "Flyover concept",
+  "kind": "INFRASTRUCTURE_CONCEPT",
+  "status": "CONCEPT_ONLY",
+  "operation": "flyover",
+  "parameters": {},
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": [
+    "Surveyed topology/elevation/ROW/clearance/utilities/geotechnical/drainage/authority approvals missing"
+  ]
+}

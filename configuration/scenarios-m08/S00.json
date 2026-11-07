@@ -1,0 +1,15 @@
+{
+  "id": "S00",
+  "version": "m08-1",
+  "name": "Baseline / no intervention",
+  "kind": "OPERATIONAL",
+  "status": "SIMULATION_READY_PROVISIONAL",
+  "operation": "baseline",
+  "parameters": {},
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": []
+}

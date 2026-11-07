@@ -1,0 +1,20 @@
+{
+  "id": "S01",
+  "version": "m08-1",
+  "name": "Synthetic signal timing alternatives",
+  "kind": "OPERATIONAL",
+  "status": "SIMULATION_READY_PROVISIONAL",
+  "operation": "signal",
+  "parameters": {
+    "green": 8,
+    "yellow": 3,
+    "all_red": 2,
+    "offset": 0
+  },
+  "provenance": "M08-ENGINEERING-ASSUMPTION-01",
+  "assumptions": [
+    "Software intervention proposal, not an approved legal traffic order or measured design",
+    "M06 empirical baseline blocked; M07 growth illustrative"
+  ],
+  "blockers": []
+}
