@@ -1,0 +1,43 @@
+{
+  "version": "m085-1",
+  "source_classifications": [
+    "OBSERVED_FIELD",
+    "VIDEO_OBSERVATION",
+    "OFFICIAL_ADMINISTRATIVE",
+    "PUBLISHED_RESEARCH",
+    "ENGINEERING_REFERENCE",
+    "ASSUMPTION",
+    "SYNTHETIC_TEST",
+    "SIMULATED_RESULT",
+    "MISSING"
+  ],
+  "M04_classes": [
+    "motorcycle",
+    "car",
+    "pickup_van",
+    "minibus",
+    "bus",
+    "light_truck",
+    "medium_truck",
+    "heavy_truck",
+    "trailer",
+    "oversize"
+  ],
+  "training": [
+    "classification",
+    "clock_sync",
+    "coverage",
+    "duplicate_control",
+    "privacy_safety"
+  ],
+  "interval_seconds": 900,
+  "timezone": "Asia/Jakarta",
+  "location_mapping_status": "PLANNED_NEEDS_FIELD_VERIFICATION",
+  "review_relative_difference": 0.1,
+  "threshold_basis": "Configurable illustrative review trigger; not universal scientific standard",
+  "video_clock_unknown": "VIDEO_TIME_ONLY_NOT_M06_EXPORTABLE",
+  "video_upload_allowed": false,
+  "original_video_deletion": "Owner-managed separately; application retires references only",
+  "field_deployment_acceptance": "PENDING_BROWSER_QA",
+  "M09_started": false
+}
