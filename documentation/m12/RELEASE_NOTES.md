@@ -1,0 +1,11 @@
+# Release notes v1.0.0
+- Frozen portable Windows host; Python runtime dan dependency yang diperlukan dibundel.
+- Satu navigasi aplikasi membungkus build 3D M10 dan workbench M08.5 tanpa menimpa source lama.
+- Empat launcher, host/manifest checks, duplicate control, bounded loopback server dan token shutdown.
+- Export PDF/CSV/JSON berdasarkan angka asli. CSV menyertakan baseline dan delta; hasil negatif tidak disembunyikan.
+- Performance/Balanced/Presentation mengubah drawing resolution, bukan trace, geometry atau parameter SUMO. Balanced default.
+- M12 response adapter memperbaiki desktop kecil dan intrinsic-grid overflow survei mobile; label historis M08.5 diperbarui hanya di lapisan release.
+- HTML M11 salinan distribusi diadaptasi ke external local scripts/CSP dan tautan port M12. PPTX/PDF/video/gambar M11 byte-identical.
+- Ketergantungan browser terpasang tetap eksplisit. Tidak ada SUMO executable, research venv, Node, source workspace lengkap atau video lapangan di paket.
+- Data update berupa versioned session/export + preview M06. Live calibration execution tidak dibundel; tetap memerlukan toolchain riset dan QC lapangan.
+- Limitasi: belum code-signed; pengujian satu PC Windows 11, bukan sertifikasi semua perangkat atau proyektor fisik.
