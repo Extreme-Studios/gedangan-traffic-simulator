@@ -1,0 +1,241 @@
+{
+  "id": "LOW",
+  "version": "m07-1",
+  "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+  "label": "ILLUSTRATIVE / UNVALIDATED GROWTH ASSUMPTIONS",
+  "od_policy": "FINAL_RATE_SUBSTITUTION",
+  "rules": [
+    {
+      "id": "LOW_motorcycle",
+      "vehicle_class": "motorcycle",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": -0.005
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_car",
+      "vehicle_class": "car",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.005
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_pickup_van",
+      "vehicle_class": "pickup_van",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.005
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_minibus",
+      "vehicle_class": "minibus",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_bus",
+      "vehicle_class": "bus",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_light_truck",
+      "vehicle_class": "light_truck",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.01
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_medium_truck",
+      "vehicle_class": "medium_truck",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.01
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_heavy_truck",
+      "vehicle_class": "heavy_truck",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.01
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_trailer",
+      "vehicle_class": "trailer",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0.005
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_oversize",
+      "vehicle_class": "oversize",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "*",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0
+      },
+      "estimation_method": "Explicit editable synthetic annual assumption",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    },
+    {
+      "id": "LOW_northbound_motorcycle",
+      "vehicle_class": "motorcycle",
+      "scenario": "LOW",
+      "geographic_scope": "Gedangan model study area",
+      "od_relation": "northbound",
+      "source": "Software experiment design, not official estimate",
+      "publication_year": 2026,
+      "measurement_period": null,
+      "start_year": 2027,
+      "end_year": 2040,
+      "schedule": {
+        "mode": "constant",
+        "rate": 0
+      },
+      "estimation_method": "Final OD/class rate substitutes the class-wide rate; no multiplier",
+      "confidence": "UNVALIDATED",
+      "provenance_id": "M07-ASSUMPTION-01",
+      "status": "SYNTHETIC_ILLUSTRATIVE_ASSUMPTION",
+      "local_flow_evidence_verified": false
+    }
+  ],
+  "explanation": "Software scenarios only. REFERENCE is a name, not an official forecast. Oversize demand remains NOT_ROUTABLE."
+}

@@ -1,0 +1,1814 @@
+{
+  "kind": "PROVISIONAL_SYNTHETIC_BASELINE",
+  "year": 2026,
+  "status": "2026 PROVISIONAL — NOT EMPIRICALLY CALIBRATED",
+  "label": "ILLUSTRATIVE TRAFFIC PROJECTION — 2026 BASELINE NOT CALIBRATED",
+  "source": "M04 composition + M04 medium120 requests/900s as software starting configuration; two intervals; explicit OD weights, not field volume",
+  "assumption_id": "M07-BASELINE-01",
+  "cells": [
+    {
+      "key": "feeder_to_main|bus|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|bus|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|car|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "feeder_to_main|car|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "feeder_to_main|heavy_truck|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|heavy_truck|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|light_truck|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|light_truck|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|medium_truck|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|medium_truck|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|minibus|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|minibus|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|motorcycle|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|motorcycle|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|oversize|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|oversize|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|pickup_van|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|pickup_van|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "feeder_to_main|trailer|0",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "feeder_to_main|trailer|900",
+      "od_id": "feeder_to_main",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "frontage_continuity|bus|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|bus|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|car|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 5
+    },
+    {
+      "key": "frontage_continuity|car|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 5
+    },
+    {
+      "key": "frontage_continuity|heavy_truck|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|heavy_truck|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|light_truck|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|light_truck|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|medium_truck|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|medium_truck|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|minibus|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|minibus|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|motorcycle|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "frontage_continuity|motorcycle|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "frontage_continuity|oversize|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|oversize|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|pickup_van|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|pickup_van|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|trailer|0",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_continuity|trailer|900",
+      "od_id": "frontage_continuity",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|bus|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|bus|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|car|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 5
+    },
+    {
+      "key": "frontage_exit|car|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 5
+    },
+    {
+      "key": "frontage_exit|heavy_truck|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|heavy_truck|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|light_truck|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|light_truck|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|medium_truck|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|medium_truck|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|minibus|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|minibus|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|motorcycle|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "frontage_exit|motorcycle|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "frontage_exit|oversize|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|oversize|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|pickup_van|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|pickup_van|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|trailer|0",
+      "od_id": "frontage_exit",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "frontage_exit|trailer|900",
+      "od_id": "frontage_exit",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|bus|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|bus|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|car|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "gedangan_junction|car|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "gedangan_junction|heavy_truck|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|heavy_truck|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|light_truck|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|light_truck|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|medium_truck|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|medium_truck|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|minibus|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|minibus|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|motorcycle|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|motorcycle|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|oversize|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|oversize|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|pickup_van|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|pickup_van|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "gedangan_junction|trailer|0",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "gedangan_junction|trailer|900",
+      "od_id": "gedangan_junction",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|bus|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|bus|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|car|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "ketajen_crossing|car|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "ketajen_crossing|heavy_truck|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|heavy_truck|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|light_truck|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|light_truck|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|medium_truck|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|medium_truck|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|minibus|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|minibus|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|motorcycle|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "ketajen_crossing|motorcycle|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "ketajen_crossing|oversize|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|oversize|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|pickup_van|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "ketajen_crossing|pickup_van|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "ketajen_crossing|trailer|0",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "ketajen_crossing|trailer|900",
+      "od_id": "ketajen_crossing",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|bus|0",
+      "od_id": "local_trip",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|bus|900",
+      "od_id": "local_trip",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|car|0",
+      "od_id": "local_trip",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "local_trip|car|900",
+      "od_id": "local_trip",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "local_trip|heavy_truck|0",
+      "od_id": "local_trip",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|heavy_truck|900",
+      "od_id": "local_trip",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|light_truck|0",
+      "od_id": "local_trip",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|light_truck|900",
+      "od_id": "local_trip",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|medium_truck|0",
+      "od_id": "local_trip",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|medium_truck|900",
+      "od_id": "local_trip",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|minibus|0",
+      "od_id": "local_trip",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|minibus|900",
+      "od_id": "local_trip",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|motorcycle|0",
+      "od_id": "local_trip",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "local_trip|motorcycle|900",
+      "od_id": "local_trip",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "local_trip|oversize|0",
+      "od_id": "local_trip",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|oversize|900",
+      "od_id": "local_trip",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "local_trip|pickup_van|0",
+      "od_id": "local_trip",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "local_trip|pickup_van|900",
+      "od_id": "local_trip",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "local_trip|trailer|0",
+      "od_id": "local_trip",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "local_trip|trailer|900",
+      "od_id": "local_trip",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|bus|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|bus|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|car|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "main_to_feeder|car|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "main_to_feeder|heavy_truck|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|heavy_truck|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|light_truck|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|light_truck|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|medium_truck|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|medium_truck|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|minibus|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|minibus|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|motorcycle|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "main_to_feeder|motorcycle|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "main_to_feeder|oversize|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|oversize|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|pickup_van|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "main_to_feeder|pickup_van|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "main_to_feeder|trailer|0",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "main_to_feeder|trailer|900",
+      "od_id": "main_to_feeder",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "northbound|bus|0",
+      "od_id": "northbound",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "northbound|bus|900",
+      "od_id": "northbound",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "northbound|car|0",
+      "od_id": "northbound",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 11
+    },
+    {
+      "key": "northbound|car|900",
+      "od_id": "northbound",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 11
+    },
+    {
+      "key": "northbound|heavy_truck|0",
+      "od_id": "northbound",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "northbound|heavy_truck|900",
+      "od_id": "northbound",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "northbound|light_truck|0",
+      "od_id": "northbound",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "northbound|light_truck|900",
+      "od_id": "northbound",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "northbound|medium_truck|0",
+      "od_id": "northbound",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "northbound|medium_truck|900",
+      "od_id": "northbound",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "northbound|minibus|0",
+      "od_id": "northbound",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "northbound|minibus|900",
+      "od_id": "northbound",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "northbound|motorcycle|0",
+      "od_id": "northbound",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 5
+    },
+    {
+      "key": "northbound|motorcycle|900",
+      "od_id": "northbound",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 5
+    },
+    {
+      "key": "northbound|oversize|0",
+      "od_id": "northbound",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "northbound|oversize|900",
+      "od_id": "northbound",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "northbound|pickup_van|0",
+      "od_id": "northbound",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "northbound|pickup_van|900",
+      "od_id": "northbound",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "northbound|trailer|0",
+      "od_id": "northbound",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "northbound|trailer|900",
+      "od_id": "northbound",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "southbound|bus|0",
+      "od_id": "southbound",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "southbound|bus|900",
+      "od_id": "southbound",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "southbound|car|0",
+      "od_id": "southbound",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 11
+    },
+    {
+      "key": "southbound|car|900",
+      "od_id": "southbound",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 11
+    },
+    {
+      "key": "southbound|heavy_truck|0",
+      "od_id": "southbound",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "southbound|heavy_truck|900",
+      "od_id": "southbound",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "southbound|light_truck|0",
+      "od_id": "southbound",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "southbound|light_truck|900",
+      "od_id": "southbound",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "southbound|medium_truck|0",
+      "od_id": "southbound",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "southbound|medium_truck|900",
+      "od_id": "southbound",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "southbound|minibus|0",
+      "od_id": "southbound",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "southbound|minibus|900",
+      "od_id": "southbound",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "southbound|motorcycle|0",
+      "od_id": "southbound",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 5
+    },
+    {
+      "key": "southbound|motorcycle|900",
+      "od_id": "southbound",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 5
+    },
+    {
+      "key": "southbound|oversize|0",
+      "od_id": "southbound",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "southbound|oversize|900",
+      "od_id": "southbound",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "southbound|pickup_van|0",
+      "od_id": "southbound",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 2
+    },
+    {
+      "key": "southbound|pickup_van|900",
+      "od_id": "southbound",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 2
+    },
+    {
+      "key": "southbound|trailer|0",
+      "od_id": "southbound",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "southbound|trailer|900",
+      "od_id": "southbound",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "station_junction|bus|0",
+      "od_id": "station_junction",
+      "vehicle_class": "bus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|bus|900",
+      "od_id": "station_junction",
+      "vehicle_class": "bus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|car|0",
+      "od_id": "station_junction",
+      "vehicle_class": "car",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 3
+    },
+    {
+      "key": "station_junction|car|900",
+      "od_id": "station_junction",
+      "vehicle_class": "car",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 3
+    },
+    {
+      "key": "station_junction|heavy_truck|0",
+      "od_id": "station_junction",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|heavy_truck|900",
+      "od_id": "station_junction",
+      "vehicle_class": "heavy_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|light_truck|0",
+      "od_id": "station_junction",
+      "vehicle_class": "light_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|light_truck|900",
+      "od_id": "station_junction",
+      "vehicle_class": "light_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|medium_truck|0",
+      "od_id": "station_junction",
+      "vehicle_class": "medium_truck",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|medium_truck|900",
+      "od_id": "station_junction",
+      "vehicle_class": "medium_truck",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|minibus|0",
+      "od_id": "station_junction",
+      "vehicle_class": "minibus",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|minibus|900",
+      "od_id": "station_junction",
+      "vehicle_class": "minibus",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|motorcycle|0",
+      "od_id": "station_junction",
+      "vehicle_class": "motorcycle",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "station_junction|motorcycle|900",
+      "od_id": "station_junction",
+      "vehicle_class": "motorcycle",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "station_junction|oversize|0",
+      "od_id": "station_junction",
+      "vehicle_class": "oversize",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|oversize|900",
+      "od_id": "station_junction",
+      "vehicle_class": "oversize",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    },
+    {
+      "key": "station_junction|pickup_van|0",
+      "od_id": "station_junction",
+      "vehicle_class": "pickup_van",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 1
+    },
+    {
+      "key": "station_junction|pickup_van|900",
+      "od_id": "station_junction",
+      "vehicle_class": "pickup_van",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 1
+    },
+    {
+      "key": "station_junction|trailer|0",
+      "od_id": "station_junction",
+      "vehicle_class": "trailer",
+      "interval_start": 0,
+      "interval_end": 900,
+      "count": 0
+    },
+    {
+      "key": "station_junction|trailer|900",
+      "od_id": "station_junction",
+      "vehicle_class": "trailer",
+      "interval_start": 900,
+      "interval_end": 1800,
+      "count": 0
+    }
+  ],
+  "movements": {
+    "northbound": {
+      "id": "northbound",
+      "origin_zone": "south_gateway",
+      "destination_zone": "north_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1121152096_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1121152096_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        }
+      }
+    },
+    "southbound": {
+      "id": "southbound",
+      "origin_zone": "north_gateway",
+      "destination_zone": "south_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w962862415_s0_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w962862415_s0_p0_0_f"
+        }
+      }
+    },
+    "feeder_to_main": {
+      "id": "feeder_to_main",
+      "origin_zone": "sukodono_west",
+      "destination_zone": "north_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w985823770_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w985823770_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        }
+      }
+    },
+    "main_to_feeder": {
+      "id": "main_to_feeder",
+      "origin_zone": "north_gateway",
+      "destination_zone": "sukodono_west",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w256672602_s1_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w256672602_s1_p0_0_f"
+        }
+      }
+    },
+    "frontage_continuity": {
+      "id": "frontage_continuity",
+      "origin_zone": "frontage_north",
+      "destination_zone": "frontage_south",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w160009748_s4_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w160009748_s4_p0_0_f"
+        }
+      }
+    },
+    "frontage_exit": {
+      "id": "frontage_exit",
+      "origin_zone": "frontage_north",
+      "destination_zone": "ketajen_east",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": null
+        },
+        "provisional": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w266287937_s54_p0_0_f"
+        }
+      }
+    },
+    "gedangan_junction": {
+      "id": "gedangan_junction",
+      "origin_zone": "gedangan_south",
+      "destination_zone": "gedangan_north",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w562358500_s16_p0_0_f",
+          "destination_edge": "w266287935_s3_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w562358500_s16_p0_0_f",
+          "destination_edge": "w266287935_s3_p0_0_f"
+        }
+      }
+    },
+    "station_junction": {
+      "id": "station_junction",
+      "origin_zone": "station_west",
+      "destination_zone": "ketajen_east",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w266287934_s0_p0_0_f",
+          "destination_edge": null
+        },
+        "provisional": {
+          "origin_edge": "w266287934_s0_p0_0_f",
+          "destination_edge": "w266287937_s54_p0_0_f"
+        }
+      }
+    },
+    "local_trip": {
+      "id": "local_trip",
+      "origin_zone": "local_origin",
+      "destination_zone": "local_destination",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1115293405_s0_p0_0_f",
+          "destination_edge": "w1115293405_s1_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1115293405_s0_p0_0_f",
+          "destination_edge": "w1115293405_s1_p0_0_f"
+        }
+      }
+    },
+    "ketajen_crossing": {
+      "id": "ketajen_crossing",
+      "origin_zone": "station_crossing_west",
+      "destination_zone": "ketajen_crossing_east",
+      "endpoints": {
+        "strict": {
+          "origin_edge": null,
+          "destination_edge": null
+        },
+        "provisional": {
+          "origin_edge": "w1240685448_s1_p0_0_f",
+          "destination_edge": "w1240685448_s1_p2_0_f"
+        }
+      }
+    }
+  },
+  "rounding": {
+    "exact_total": 240.00000000000003,
+    "rounded_total": 240,
+    "rounding_error": -2.842170943040401e-14,
+    "method": "Global half-up total, largest remainder across OD/class/interval; stable lexical key ties; no random rounding"
+  },
+  "demand_window": [
+    0,
+    1800
+  ],
+  "measurement_window": [
+    0,
+    2100
+  ],
+  "day_period": "ILLUSTRATIVE_DAY — not a surveyed calendar date or peak",
+  "time_profile": "Preserve two 15-minute interval totals unless explicit profile override"
+}
