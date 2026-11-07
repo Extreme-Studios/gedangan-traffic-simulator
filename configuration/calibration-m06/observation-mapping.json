@@ -1,0 +1,186 @@
+[
+  {
+    "location_id": "MAIN_NB",
+    "direction": "northbound",
+    "edge_id": "w562358500_s16_p0_0_f",
+    "lane_ids": [
+      "w562358500_s16_p0_0_f_0",
+      "w562358500_s16_p0_0_f_1"
+    ],
+    "junction_id": "osm_2718664256",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_MAIN_NB",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "arterial",
+    "source_way_id": 562358500,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        -84.18,
+        -148.53
+      ],
+      [
+        -80.2,
+        -96.24
+      ]
+    ]
+  },
+  {
+    "location_id": "MAIN_SB",
+    "direction": "southbound",
+    "edge_id": "w512351908_s4_p0_0_f",
+    "lane_ids": [
+      "w512351908_s4_p0_0_f_0",
+      "w512351908_s4_p0_0_f_1"
+    ],
+    "junction_id": "osm_3201485055",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_MAIN_SB",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "arterial",
+    "source_way_id": 512351908,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        -61.84,
+        -16.64
+      ],
+      [
+        -64.3,
+        -58.24
+      ]
+    ]
+  },
+  {
+    "location_id": "GEDANGAN_FEEDER",
+    "direction": "eastbound",
+    "edge_id": "w266287930_s0_p0_0_f",
+    "lane_ids": [
+      "w266287930_s0_p0_0_f_0",
+      "w266287930_s0_p0_0_f_1"
+    ],
+    "junction_id": "osm_4513024622",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_GEDANGAN_FEEDER",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "feeder",
+    "source_way_id": 266287930,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        -201.08,
+        -85.23
+      ],
+      [
+        -190.43,
+        -82.73
+      ],
+      [
+        -91.38,
+        -72.11
+      ]
+    ]
+  },
+  {
+    "location_id": "FRONTAGE",
+    "direction": "source_direction",
+    "edge_id": "w1118947356_s0_p0_0_f",
+    "lane_ids": [
+      "w1118947356_s0_p0_0_f_0",
+      "w1118947356_s0_p0_0_f_1"
+    ],
+    "junction_id": "osm_10233433072",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_FRONTAGE",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "frontage",
+    "source_way_id": 1118947356,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        51.47,
+        1371.37
+      ],
+      [
+        50.11,
+        1349.89
+      ]
+    ]
+  },
+  {
+    "location_id": "KETAJEN",
+    "direction": "eastbound",
+    "edge_id": "w1240685448_s1_p2_0_f",
+    "lane_ids": [
+      "w1240685448_s1_p2_0_f_0"
+    ],
+    "junction_id": "osm_1720713565",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_KETAJEN",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "feeder",
+    "source_way_id": 1240685448,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        0.33,
+        -54.41
+      ],
+      [
+        9.45,
+        -49.16
+      ]
+    ]
+  },
+  {
+    "location_id": "STATION_CROSSING",
+    "direction": "westbound",
+    "edge_id": "w1240685448_s1_p2_0_r",
+    "lane_ids": [
+      "w1240685448_s1_p2_0_r_0"
+    ],
+    "junction_id": "osm_859708050",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_STATION_CROSSING",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "crossing",
+    "source_way_id": 1240685448,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        10.26,
+        -51.58
+      ],
+      [
+        0.63,
+        -54.94
+      ]
+    ]
+  },
+  {
+    "location_id": "UPSTREAM_STORAGE",
+    "direction": "southbound",
+    "edge_id": "w512351908_s3_p0_0_f",
+    "lane_ids": [
+      "w512351908_s3_p0_0_f_0",
+      "w512351908_s3_p0_0_f_1"
+    ],
+    "junction_id": "osm_1359952195",
+    "turning_movement": "straight",
+    "detector_id": "proposed_m06_UPSTREAM_STORAGE",
+    "od_zone": "NEEDS MANUAL REVIEW",
+    "role": "arterial",
+    "source_way_id": 512351908,
+    "physical_status": "NEEDS_FIELD_SURVEY",
+    "shape": [
+      [
+        -56.31,
+        77.1
+      ],
+      [
+        -61.84,
+        -16.64
+      ]
+    ]
+  }
+]

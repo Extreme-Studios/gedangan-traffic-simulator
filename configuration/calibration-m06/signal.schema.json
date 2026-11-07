@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "const": "signal"
+    },
+    "source_class": {
+      "enum": [
+        "OBSERVED_FIELD",
+        "DEMO_SYNTHETIC"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "interval_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "interval_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "timezone": {
+      "const": "Asia/Jakarta"
+    },
+    "location_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approach": {
+      "type": "string",
+      "minLength": 1
+    },
+    "direction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "vehicle_class": {
+      "enum": [
+        "motorcycle",
+        "car",
+        "pickup_van",
+        "minibus",
+        "bus",
+        "light_truck",
+        "medium_truck",
+        "heavy_truck",
+        "trailer",
+        "oversize",
+        "all"
+      ]
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observer_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quality": {
+      "enum": [
+        "VERIFIED",
+        "PROVISIONAL",
+        "REJECTED"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "provenance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uncertainty": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "green_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "yellow_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "red_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "cycle_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "offset_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "intersection_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "signal_head_group": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phase_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "observation_id",
+    "kind",
+    "source_class",
+    "date",
+    "interval_start",
+    "interval_end",
+    "timezone",
+    "location_id",
+    "approach",
+    "direction",
+    "vehicle_class",
+    "method",
+    "observer_source",
+    "quality",
+    "confidence",
+    "provenance_id",
+    "uncertainty",
+    "notes",
+    "green_s",
+    "yellow_s",
+    "red_s",
+    "cycle_s",
+    "offset_s",
+    "intersection_id",
+    "signal_head_group",
+    "phase_id"
+  ]
+}

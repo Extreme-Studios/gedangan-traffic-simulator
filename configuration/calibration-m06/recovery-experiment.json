@@ -1,0 +1,34 @@
+{
+  "vehicle_counts": [
+    24,
+    36,
+    48
+  ],
+  "speed_factors": [
+    0.7,
+    0.9,
+    1.1
+  ],
+  "calibration_seeds": [
+    11,
+    12
+  ],
+  "validation_seeds": [
+    21,
+    22
+  ],
+  "weights": {
+    "traffic_counts": 1,
+    "travel_times": 1
+  },
+  "scales": {
+    "traffic_counts": 36,
+    "travel_times": 60
+  },
+  "label": "SOFTWARE CALIBRATION TEST — NOT EMPIRICAL CALIBRATION",
+  "target_namespace": "simulation/runs/m06/hidden-target-not-observed",
+  "independent_validation_rule": "Seeds21/22reserved, never used in objective selection",
+  "horizon_s": 600,
+  "warmup_s": 0,
+  "hidden_parameter_values": "Retained separately in experiment-evidence.json, never read by search"
+}

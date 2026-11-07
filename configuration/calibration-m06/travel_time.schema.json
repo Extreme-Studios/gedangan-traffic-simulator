@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "const": "travel_time"
+    },
+    "source_class": {
+      "enum": [
+        "OBSERVED_FIELD",
+        "DEMO_SYNTHETIC"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "interval_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "interval_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "timezone": {
+      "const": "Asia/Jakarta"
+    },
+    "location_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approach": {
+      "type": "string",
+      "minLength": 1
+    },
+    "direction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "vehicle_class": {
+      "enum": [
+        "motorcycle",
+        "car",
+        "pickup_van",
+        "minibus",
+        "bus",
+        "light_truck",
+        "medium_truck",
+        "heavy_truck",
+        "trailer",
+        "oversize",
+        "all"
+      ]
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observer_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quality": {
+      "enum": [
+        "VERIFIED",
+        "PROVISIONAL",
+        "REJECTED"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "provenance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uncertainty": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "travel_time_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "sample_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "origin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "destination": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "corridor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "observation_id",
+    "kind",
+    "source_class",
+    "date",
+    "interval_start",
+    "interval_end",
+    "timezone",
+    "location_id",
+    "approach",
+    "direction",
+    "vehicle_class",
+    "method",
+    "observer_source",
+    "quality",
+    "confidence",
+    "provenance_id",
+    "uncertainty",
+    "notes",
+    "travel_time_s",
+    "sample_count",
+    "origin",
+    "destination",
+    "corridor"
+  ]
+}

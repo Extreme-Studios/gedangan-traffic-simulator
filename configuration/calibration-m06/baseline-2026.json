@@ -1,0 +1,35 @@
+{
+  "year": 2026,
+  "status": "2026 PROVISIONAL BASELINE",
+  "network": "simulation/network/m051/provisional/network.net.xml",
+  "network_sha256": "0b470d7ab9dff823efe96a2e286ec59a6c02b7735db9e653b666b15e567bb53c",
+  "vehicle_registry": "configuration/demand-m04/vehicle-registry.json",
+  "demand": "SYNTHETIC_M04_STARTING_CONFIG_NOT_TRUTH",
+  "OD": "simulation/demand/m04/od-matrix.fixture.json",
+  "signal": "configuration/signals-m05/program.json",
+  "railway": "configuration/railway-m05/pilot.json",
+  "behavior": "configuration/behavior-m05/profiles.json",
+  "measurement_window": {
+    "timezone": "Asia/Jakarta",
+    "empirical": null,
+    "fixture_seconds": [
+      0,
+      600
+    ]
+  },
+  "observation_dataset": "data/observations/m06/normalized/observations.json",
+  "observed_records": 0,
+  "source_confidence": "MODEL_ASSUMPTIONS_AND_OSM_REFERENCE",
+  "empirical_baseline": {
+    "status": "BLOCKED — INSUFFICIENT OBSERVED DATA",
+    "enabled": false,
+    "independent_validation": "INDEPENDENT VALIDATION NOT POSSIBLE WITH AVAILABLE DATA"
+  },
+  "structural_blockers": [
+    "CROSSING_GEOMETRY",
+    "ACCESS_HEAVY",
+    "STRICT_CONNECTIVITY",
+    "CONTROL_TIMING",
+    "FIELD_NETWORK"
+  ]
+}

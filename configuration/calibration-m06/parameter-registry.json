@@ -1,0 +1,242 @@
+[
+  {
+    "id": "vehicle_count",
+    "scope": "demand",
+    "initial": 36,
+    "allowed_bounds": [
+      12,
+      60
+    ],
+    "unit": "vehicles/fixture240s",
+    "source": "Small staged load envelope, not site prior",
+    "eligibility": "SOFTWARE_FIXTURE_ONLY",
+    "sensitivity": "documentation/m06/uncertainty.json",
+    "dependency": [
+      "isolated_fixture_only"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "speed_factor",
+    "scope": "vehicle",
+    "initial": 0.9,
+    "allowed_bounds": [
+      0.6,
+      1.2
+    ],
+    "unit": "fraction",
+    "source": "Positive SUMO factor; narrow engineering test range, not observed speed distribution",
+    "eligibility": "SOFTWARE_FIXTURE_ONLY",
+    "sensitivity": "documentation/m06/uncertainty.json",
+    "dependency": [
+      "isolated_fixture_only"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "composition",
+    "scope": "demand",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "fraction/class",
+    "source": "M04assumption only",
+    "eligibility": "BLOCKED_NO_COUNTS",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "OD_proportions",
+    "scope": "OD",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "fraction",
+    "source": "No empiricalOD",
+    "eligibility": "BLOCKED_NO_OD",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "departure_distribution",
+    "scope": "demand",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "time",
+    "source": "No field interval distribution",
+    "eligibility": "BLOCKED_NO_TIMESTAMPS",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "turn_proportions",
+    "scope": "routing",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "fraction",
+    "source": "No turning counts",
+    "eligibility": "BLOCKED_NO_TURNS",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "accel",
+    "scope": "vehicle",
+    "initial": 2,
+    "allowed_bounds": null,
+    "unit": "m/s2",
+    "source": "M04starting assumption; need trajectories",
+    "eligibility": "LOCKED_UNIDENTIFIABLE",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "decel",
+    "scope": "vehicle",
+    "initial": 4,
+    "allowed_bounds": null,
+    "unit": "m/s2",
+    "source": "M04starting assumption",
+    "eligibility": "LOCKED_UNIDENTIFIABLE",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "minGap",
+    "scope": "vehicle",
+    "initial": 2.5,
+    "allowed_bounds": null,
+    "unit": "m",
+    "source": "M04starting assumption",
+    "eligibility": "LOCKED_UNIDENTIFIABLE",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "tau",
+    "scope": "vehicle",
+    "initial": 1.2,
+    "allowed_bounds": null,
+    "unit": "s",
+    "source": "M04starting assumption",
+    "eligibility": "LOCKED_UNIDENTIFIABLE",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "ASSUMPTION"
+  },
+  {
+    "id": "lateral_behavior",
+    "scope": "vehicle",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "various",
+    "source": "SL2015softwarefixture not field target",
+    "eligibility": "BLOCKED_NO_LATERAL_DATA",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "signal_cycle_offset",
+    "scope": "control",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "s",
+    "source": "Do not optimize observed timing away",
+    "eligibility": "MEASURED_BOUNDARY_CONDITION_REQUIRED",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "rail_closure",
+    "scope": "control",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "s",
+    "source": "Timetable != actual closure",
+    "eligibility": "MEASURED_BOUNDARY_CONDITION_REQUIRED",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  },
+  {
+    "id": "train_arrival",
+    "scope": "railway",
+    "initial": null,
+    "allowed_bounds": null,
+    "unit": "timestamp",
+    "source": "Pilot not all station operation",
+    "eligibility": "MEASURED_BOUNDARY_CONDITION_REQUIRED",
+    "sensitivity": "NOT_ESTIMATED",
+    "dependency": [
+      "verified_observations",
+      "structural_readiness",
+      "independent_holdout"
+    ],
+    "prior_information": "No empirical prior available",
+    "status": "MISSING"
+  }
+]
