@@ -1,0 +1,16 @@
+{
+  "version": "M051-causal-v3",
+  "category": "SYNTHETIC_MEASUREMENT_POLICY",
+  "stopped_speed_m_s": 0.3,
+  "upstream_head_to_end_m": 10,
+  "queue_tail_m": 5,
+  "queue_head_to_end_m": 10,
+  "maximum_queue_body_gap_m": 10,
+  "continuous_duration_s": 5,
+  "moving_speed_m_s": 1,
+  "movement_after_space_window_s": 5,
+  "sample_period_s": 1,
+  "simulation_step_s": 0.5,
+  "recovery_space": "Free entry footprint >= vehicle body length, same legal movement remains opened/foe-free until release; conservative initial blockage uses length+registry minGap.",
+  "geometry_tolerance": "NONE; metrics require field survey, thresholds above are queue-analysis operational definitions, not physical clearance safety limits."
+}
