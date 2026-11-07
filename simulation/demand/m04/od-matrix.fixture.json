@@ -1,0 +1,179 @@
+{
+  "schema_version": "m04-1",
+  "baseline_year": 2026,
+  "category": "SYNTHETIC_TEST",
+  "interval_seconds": 900,
+  "movements": [
+    {
+      "id": "northbound",
+      "origin_zone": "south_gateway",
+      "destination_zone": "north_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1121152096_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1121152096_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "southbound",
+      "origin_zone": "north_gateway",
+      "destination_zone": "south_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w962862415_s0_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w962862415_s0_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "feeder_to_main",
+      "origin_zone": "sukodono_west",
+      "destination_zone": "north_gateway",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w985823770_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w985823770_s0_p0_0_f",
+          "destination_edge": "w561400031_s2_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "main_to_feeder",
+      "origin_zone": "north_gateway",
+      "destination_zone": "sukodono_west",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w256672602_s1_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w561400030_s0_p0_0_f",
+          "destination_edge": "w256672602_s1_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "frontage_continuity",
+      "origin_zone": "frontage_north",
+      "destination_zone": "frontage_south",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w160009748_s4_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w160009748_s4_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "frontage_exit",
+      "origin_zone": "frontage_north",
+      "destination_zone": "ketajen_east",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": null
+        },
+        "provisional": {
+          "origin_edge": "w1181141358_s0_p0_0_f",
+          "destination_edge": "w266287937_s54_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "gedangan_junction",
+      "origin_zone": "gedangan_south",
+      "destination_zone": "gedangan_north",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w562358500_s16_p0_0_f",
+          "destination_edge": "w266287935_s3_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w562358500_s16_p0_0_f",
+          "destination_edge": "w266287935_s3_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "station_junction",
+      "origin_zone": "station_west",
+      "destination_zone": "ketajen_east",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w266287934_s0_p0_0_f",
+          "destination_edge": null
+        },
+        "provisional": {
+          "origin_edge": "w266287934_s0_p0_0_f",
+          "destination_edge": "w266287937_s54_p0_0_f"
+        }
+      }
+    },
+    {
+      "id": "local_trip",
+      "origin_zone": "local_origin",
+      "destination_zone": "local_destination",
+      "weight": 1,
+      "confidence": "ASSUMPTION",
+      "provenance_id": "A-ZONE-01",
+      "endpoint_selection": "M03 named route fixture; local uses two adjacent same-way local edges",
+      "endpoints": {
+        "strict": {
+          "origin_edge": "w1115293405_s0_p0_0_f",
+          "destination_edge": "w1115293405_s1_p0_0_f"
+        },
+        "provisional": {
+          "origin_edge": "w1115293405_s0_p0_0_f",
+          "destination_edge": "w1115293405_s1_p0_0_f"
+        }
+      }
+    }
+  ]
+}
