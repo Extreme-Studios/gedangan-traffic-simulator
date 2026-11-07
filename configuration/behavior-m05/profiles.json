@@ -1,0 +1,14 @@
+{
+  "category": "ASSUMPTION",
+  "baseline_registry": "configuration/demand-m04/vehicle-registry.json",
+  "carFollowModel": "Krauss",
+  "baseline_laneChangeModel": "LC2013",
+  "sublane_fixture": {
+    "laneChangeModel": "SL2015",
+    "lateral_resolution": 0.4,
+    "minGapLat": 0.25,
+    "maxSpeedLat": 0.7,
+    "lcPushy": 0
+  },
+  "oversize": "BLOCKED_MISSING_CLEARANCE_LEGALITY_SWEPT_PATH"
+}
