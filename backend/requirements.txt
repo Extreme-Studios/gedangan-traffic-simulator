@@ -1,0 +1,2 @@
+# Foundation API runs with Python 3.12+ standard library. No runtime pip dependency.
+# SUMO/TraCI installation and real integration are deferred; see simulation/README.md.
