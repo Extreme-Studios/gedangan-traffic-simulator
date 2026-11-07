@@ -1,0 +1,26 @@
+{
+  "version":"m045-access-1", "sumo_version":"1.28.0",
+  "classes":["motorcycle","passenger","delivery","bus","truck","trailer"],
+  "access_hierarchy":{"motorcycle":["access","vehicle","motor_vehicle","motorcycle"],"passenger":["access","vehicle","motor_vehicle","motorcar"],"delivery":["access","vehicle","motor_vehicle","goods"],"bus":["access","vehicle","motor_vehicle","psv","bus"],"truck":["access","vehicle","motor_vehicle","goods","hgv"],"trailer":["access","vehicle","motor_vehicle","goods","hgv","hgv:articulated"]},
+  "positive_values":["yes","designated"],
+  "denied_or_purpose_limited_values":["no","private","destination","customers","delivery","agricultural","forestry","permit","official","emergency"],
+  "conditional_access":"quarantine relevant class at all times, never interpret an unresolved condition as permission",
+  "lane_specific_unparsed_access":"quarantine relevant class rather than guess lane order",
+  "public_road_light_classes":["motorcycle","passenger","delivery"],
+  "public_road_highways":["trunk","primary","secondary","tertiary","unclassified","residential","living_street","trunk_link","primary_link","secondary_link","tertiary_link"],
+  "role_rules":{
+    "main_arterial_road":{"inferred":["motorcycle","passenger","delivery","bus"],"provisional_assumption":["truck","trailer"],"reason":"Public trunk road classification supports a model inference for ordinary motor traffic. No verified local truck/trailer legal or geometric clearance; heavy access allowed only as a provisional technical trial."},
+    "frontage_road":{"inferred":["motorcycle","passenger","delivery"],"provisional_assumption":[],"reason":"Separate tertiary frontage, light access inference only. No automatic bus/truck/trailer access; explicit class evidence required."},
+    "feeder_road":{"inferred":["motorcycle","passenger","delivery"],"provisional_assumption":["bus"],"reason":"Mapped public feeder light traffic inference; minibus bus-class access provisional only, subject to M04 type-specific road/geometry screens."},
+    "collector_road":{"inferred":["motorcycle","passenger","delivery"],"provisional_assumption":["bus"],"reason":"Mapped public collector light traffic inference; bus provisional only."},
+    "local_access_road":{"inferred":["motorcycle","passenger","delivery"],"provisional_assumption":[],"reason":"Residential/living-street ordinary light access inference. Heavy vehicles not automatically allowed."},
+    "service_road":{"inferred":[],"provisional_assumption":["motorcycle","passenger","delivery"],"reason":"Public/private access not independently established; strict withholds missing access, provisional light-only assumption."},
+    "connector_road":{"inferred":["motorcycle","passenger","delivery"],"provisional_assumption":[],"reason":"Mapped connector light traffic inference; no heavy access without explicit source."}
+  },
+  "inference_scope":"OSM-referenced modelling rule, not verified Indonesian legal entitlement. Explicit tags override classification; absence of a restriction is not field verification.",
+  "verified_road_authority_documents":[],
+  "missing_authority_evidence":"No verifiable road-specific vehicle access/clearance document supplied. Not filled from guesses.",
+  "preserve_m03_exclusions":true,"oversize":"always denied until legal, height/load, geometry and swept-path clearance exists",
+  "trailer_trial":{"network_variant":"provisional","allowed_role":"main_arterial_road","minimum_nominal_width_margin_m":0.4,"maximum_connector_deflection_degrees":25,"clearance_status":"ASSUMPTION_SCREEN_ONLY_NOT_SURVEYED_OR_PERMITTED"},
+  "references":["https://wiki.openstreetmap.org/wiki/Key:access","https://wiki.openstreetmap.org/wiki/Key:highway","https://wiki.openstreetmap.org/wiki/Conditional_restrictions","https://eclipse.dev/sumo/docs/Networks/PlainXML.html"]
+}
