@@ -1,0 +1,305 @@
+{
+  "source_features": [
+    {
+      "type": "Feature",
+      "id": "osm-rail:1330582009:part:0",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.7287965,
+            -7.3870495
+          ],
+          [
+            112.7287696,
+            -7.3874684
+          ],
+          [
+            112.7287401,
+            -7.3877769
+          ],
+          [
+            112.7287133,
+            -7.3880722
+          ],
+          [
+            112.7286838,
+            -7.3883701
+          ],
+          [
+            112.7285903,
+            -7.3892886
+          ],
+          [
+            112.7285852,
+            -7.389341
+          ]
+        ]
+      },
+      "properties": {
+        "id": "osm-rail:1330582009:part:0",
+        "category": "research_reference",
+        "source_id": "osm-gedangan-network",
+        "source_snapshot_utc": "2026-10-31T04:34:22Z",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "verification_status": "Partially verified",
+        "geometry_check": "Verified against retained OSM snapshot",
+        "official_document_geometry_check": "Unverified",
+        "field_survey_check": "Unverified",
+        "osm_type": "way",
+        "osm_id": 1330582009,
+        "osm_version": 3,
+        "osm_timestamp": "2026-09-10T05:02:42Z",
+        "osm_url": "https://www.openstreetmap.org/way/1330582009",
+        "tags": {
+          "electrified": "no",
+          "gauge": "1067",
+          "maxspeed": "80",
+          "name": "Jalur Kereta Api Wonokromo–Bangil",
+          "operator": "Kereta Api Indonesia",
+          "owner": "Direktorat Jenderal Perkeretaapian Kementerian Perhubungan Republik Indonesia",
+          "railway": "rail",
+          "railway:bidirectional": "regular",
+          "railway:preferred_direction": "both",
+          "railway:track_ref": "2",
+          "railway:traffic_mode": "mixed",
+          "sleeper:material": "concrete",
+          "usage": "main",
+          "wikidata": "Q12487151",
+          "wikipedia": "id:Jalur Kereta Api Wonokromo–Bangil"
+        },
+        "name": "Jalur Kereta Api Wonokromo–Bangil",
+        "osm_node_ids": [
+          11781097628,
+          11781097629,
+          11781097630,
+          11781097631,
+          11865512148,
+          11865512149,
+          5421548719
+        ],
+        "tracks": null,
+        "track_count_status": "OSM tag only if present; no surveyed track count",
+        "length_m": 254.531
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm-rail:562358494:part:0",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.7285852,
+            -7.389341
+          ],
+          [
+            112.7285791,
+            -7.3894101
+          ]
+        ]
+      },
+      "properties": {
+        "id": "osm-rail:562358494:part:0",
+        "category": "research_reference",
+        "source_id": "osm-gedangan-network",
+        "source_snapshot_utc": "2026-10-31T04:34:22Z",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "verification_status": "Partially verified",
+        "geometry_check": "Verified against retained OSM snapshot",
+        "official_document_geometry_check": "Unverified",
+        "field_survey_check": "Unverified",
+        "osm_type": "way",
+        "osm_id": 562358494,
+        "osm_version": 8,
+        "osm_timestamp": "2026-09-10T05:02:42Z",
+        "osm_url": "https://www.openstreetmap.org/way/562358494",
+        "tags": {
+          "bridge": "yes",
+          "electrified": "no",
+          "gauge": "1067",
+          "layer": "1",
+          "maxspeed": "80",
+          "name": "Jalur Kereta Api Wonokromo–Bangil",
+          "operator": "Kereta Api Indonesia",
+          "owner": "Direktorat Jenderal Perkeretaapian Kementerian Perhubungan Republik Indonesia",
+          "railway": "rail",
+          "railway:bidirectional": "regular",
+          "railway:preferred_direction": "both",
+          "railway:track_ref": "2",
+          "railway:traffic_mode": "mixed",
+          "sleeper:material": "concrete",
+          "usage": "main",
+          "wikidata": "Q12487151",
+          "wikipedia": "id:Jalur Kereta Api Wonokromo–Bangil"
+        },
+        "name": "Jalur Kereta Api Wonokromo–Bangil",
+        "osm_node_ids": [
+          5421548719,
+          5813996877
+        ],
+        "tracks": null,
+        "track_count_status": "OSM tag only if present; no surveyed track count",
+        "length_m": 7.672
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm-rail:1330582010:part:0",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.7285791,
+            -7.3894101
+          ],
+          [
+            112.7285713,
+            -7.3894924
+          ],
+          [
+            112.7285578,
+            -7.3896163
+          ],
+          [
+            112.7285322,
+            -7.3899009
+          ],
+          [
+            112.7285002,
+            -7.390201
+          ],
+          [
+            112.7284813,
+            -7.3904129
+          ],
+          [
+            112.7284616,
+            -7.3906071
+          ],
+          [
+            112.7284303,
+            -7.3908239
+          ],
+          [
+            112.7283968,
+            -7.3910553
+          ],
+          [
+            112.7283485,
+            -7.3913359
+          ],
+          [
+            112.7282614,
+            -7.3917895
+          ],
+          [
+            112.7281634,
+            -7.3923307
+          ]
+        ]
+      },
+      "properties": {
+        "id": "osm-rail:1330582010:part:0",
+        "category": "research_reference",
+        "source_id": "osm-gedangan-network",
+        "source_snapshot_utc": "2026-10-31T04:34:22Z",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "verification_status": "Partially verified",
+        "geometry_check": "Verified against retained OSM snapshot",
+        "official_document_geometry_check": "Unverified",
+        "field_survey_check": "Unverified",
+        "osm_type": "way",
+        "osm_id": 1330582010,
+        "osm_version": 3,
+        "osm_timestamp": "2026-09-10T05:02:42Z",
+        "osm_url": "https://www.openstreetmap.org/way/1330582010",
+        "tags": {
+          "electrified": "no",
+          "gauge": "1067",
+          "maxspeed": "80",
+          "name": "Jalur Kereta Api Wonokromo–Bangil",
+          "operator": "Kereta Api Indonesia",
+          "owner": "Direktorat Jenderal Perkeretaapian Kementerian Perhubungan Republik Indonesia",
+          "railway": "rail",
+          "railway:bidirectional": "regular",
+          "railway:preferred_direction": "both",
+          "railway:track_ref": "2",
+          "railway:traffic_mode": "mixed",
+          "sleeper:material": "concrete",
+          "usage": "main",
+          "wikidata": "Q12487151",
+          "wikipedia": "id:Jalur Kereta Api Wonokromo–Bangil"
+        },
+        "name": "Jalur Kereta Api Wonokromo–Bangil",
+        "osm_node_ids": [
+          5813996877,
+          859708050,
+          11781097634,
+          11781097635,
+          11781097636,
+          11781097637,
+          534580588,
+          11781097638,
+          11781097639,
+          11781097640,
+          11781097641,
+          11781097642
+        ],
+        "tracks": null,
+        "track_count_status": "OSM tag only if present; no surveyed track count",
+        "length_m": 326.503
+      }
+    }
+  ],
+  "source_node_chain": [
+    11781097628,
+    11781097629,
+    11781097630,
+    11781097631,
+    11865512148,
+    11865512149,
+    5421548719,
+    5813996877,
+    859708050,
+    11781097634,
+    11781097635,
+    11781097636,
+    11781097637,
+    534580588,
+    11781097638,
+    11781097639,
+    11781097640,
+    11781097641,
+    11781097642
+  ],
+  "route": [
+    "m05_rail_0",
+    "m05_rail_1",
+    "m05_rail_2",
+    "m05_rail_3",
+    "m05_rail_4",
+    "m05_rail_5",
+    "m05_rail_6",
+    "m05_rail_7",
+    "m05_rail_8",
+    "m05_rail_9",
+    "m05_rail_10",
+    "m05_rail_11",
+    "m05_rail_12",
+    "m05_rail_13",
+    "m05_rail_14",
+    "m05_rail_15",
+    "m05_rail_16",
+    "m05_rail_17"
+  ],
+  "source_status": "VERIFIED against retained OSM, not field survey",
+  "operation_status": "ASSUMPTION: one direction, one mapped centerline, not full station track plan",
+  "excluded_siding": 1268453702,
+  "crossing": "osm_859708050",
+  "gate_count": "MISSING; shared nodes are not physical gate counts",
+  "source_sha256": "bb97f0b0ca1256318e37697aabb91d11a859ed385bddc7100388a6a8291b193c"
+}
