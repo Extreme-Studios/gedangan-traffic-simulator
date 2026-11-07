@@ -9,3 +9,7 @@ Security review: scanned selected UTF-8 files for private keys, common GitHub/AW
 The application keeps permissions and network geometry unchanged. Pedestrians remain unsupported and angkot uses an assumed van model. No calibration, full-project restore or all-milestone regression claim is made.
 
 Validation from the isolated source copy: npm ci, TypeScript check and Vite simple build passed. Actual SUMO 1.28.0 run with 100 requests: 98 routed/departed/moved, 92 arrived, 2 rejected routes. Local test toolchain/dependencies/build/results are excluded from publication.
+
+## Freeze handover — 8 November 2026
+
+Source backup 755 file telah diunduh dari GitHub dan diverifikasi seluruh SHA256-nya. PROJECT_HANDOVER.md ditambahkan sebagai acuan melanjutkan; README dan manifest diperbarui. Status pengembangan FROZEN. EXE dan arsip penelitian tetap tidak diunggah.

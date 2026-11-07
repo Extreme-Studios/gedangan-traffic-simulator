@@ -1,5 +1,7 @@
 # Gedangan Traffic Simulator
 
+**Status: FROZEN. Mulai dari [PROJECT_HANDOVER.md](PROJECT_HANDOVER.md) untuk memulihkan dan melanjutkan proyek.**
+
 Source backup for the Gedangan traffic simulator by Extreme Studios. React/Three.js renders actual SUMO outputs on a location-based OSM environment. This repository contains source and the minimum retained network/context data for **Simple 20K mode**. It does not contain the complete research archive, installed dependencies, EXE distribution, or historical simulation recordings.
 
 ## Current simple mode

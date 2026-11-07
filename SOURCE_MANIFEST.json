@@ -1,5 +1,5 @@
 {
-  "scope": "Source and minimum simple-mode data, excludes this self-referential manifest",
+  "scope": "Source and minimum simple-mode data including frozen handover; excludes this self-referential manifest",
   "files": [
     {
       "path": ".gitignore",
@@ -332,9 +332,14 @@
       "sha256": "908340747669d3e61864abe9f7ac73236afeac0bbb637aca6a7a4ae86a6c2ad3"
     },
     {
+      "path": "PROJECT_HANDOVER.md",
+      "bytes": 10821,
+      "sha256": "217afacf6ec3289a46b500abf1086e1bfb0be516f27fc06c12c3c2019fbf4993"
+    },
+    {
       "path": "README.md",
-      "bytes": 3709,
-      "sha256": "dd96ae55a150ec89fb2607c66ec5be66429e6fc9e57c5d2ec121fb0f63cf4f78"
+      "bytes": 3827,
+      "sha256": "6f8a045210a53870c9f1603ceb6df49859f66653165927d22c863260409bef36"
     },
     {
       "path": "REBUILD_BEHAVIOR_M05.bat",
@@ -403,8 +408,8 @@
     },
     {
       "path": "SOURCE_BACKUP.md",
-      "bytes": 1573,
-      "sha256": "e64fcfa8c09c46cd8ebf324b63ac6798763db0ffdd4a360775ce33695404f051"
+      "bytes": 1870,
+      "sha256": "cabd2dac06afc0d74375659c7e20fd36597db94dc26aa35db6745ad52b753dfe"
     },
     {
       "path": "START_BEHAVIOR_M05.bat",
