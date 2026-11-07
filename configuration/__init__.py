@@ -1,0 +1,1 @@
+"""Versioned local configuration contracts."""

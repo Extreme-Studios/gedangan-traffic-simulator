@@ -1,0 +1,9 @@
+{
+  "project": "Gedangan Traffic Simulator", "version": "0.1.0", "milestone": 1,
+  "baseline_year": 2026, "mode": "FOUNDATION", "engine": "ENGINE NOT CONNECTED",
+  "network_path": null, "demand_path": null, "calibration_status": "not_started",
+  "growth": {"baseline_year": 2026, "rates": [], "missing_rate_policy": "error", "rate_unit": "fraction_per_year", "dimensions": ["year", "vehicle_class_id", "zone_id"], "formula_future": "D(y,c,z) = D(2026,c,z) * product(1 + r(t,c,z)), t=2027..y; missing baseline/rate blocks projection"},
+  "simulation": {"seed": null, "step_length_s": null, "network_hash": null, "sumo_version": null},
+  "visualization": {"scene": "abstract_placeholder_not_geographic", "pixel_ratio_cap": 1.5, "render_fps_cap": 30, "external_assets": false},
+  "target": {"os": "Windows 11", "gpu": "AMD", "vram_gb": 6, "ram_gb": 16, "resolution": "1920x1080"}
+}

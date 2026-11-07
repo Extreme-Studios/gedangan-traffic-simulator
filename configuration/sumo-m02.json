@@ -1,0 +1,11 @@
+{
+  "version": "1.28.0",
+  "sumo_home_relative": "toolchain/sumo-win64-1.28.0",
+  "download_url": "https://sumo.dlr.de/releases/1.28.0/sumo-win64-1.28.0.zip",
+  "official_downloads_page": "https://eclipse.dev/sumo/docs/Downloads.html",
+  "archive_sha256": "822aa9c57a07a895200d536fd2b3fe8785e36baa9b97ecbe75688e08a636fb8e",
+  "hash_verification": "Local SHA256 recorded; ZIP CRC tested; no independent publisher checksum compared",
+  "prepared_at_utc": "2026-10-31T04:35:01.498543+00:00",
+  "scope": "project-local portable distribution; no system environment change",
+  "python_interfaces": "Bundled tools/traci and tools/sumolib from same archive; no separate pip versions"
+}
