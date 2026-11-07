@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","include":["src/m1561","vite.m1561.config.ts"]}
