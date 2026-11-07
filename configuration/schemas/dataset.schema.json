@@ -1,0 +1,1408 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gedangan:dataset:0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline_year": {
+      "const": 2026
+    },
+    "category": {
+      "enum": [
+        "observed_data",
+        "research_reference",
+        "assumptions",
+        "simulated_results"
+      ]
+    },
+    "road_nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/road_nodes"
+      }
+    },
+    "road_edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/road_edges"
+      }
+    },
+    "lanes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lanes"
+      }
+    },
+    "junctions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/junctions"
+      }
+    },
+    "railway_crossings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/railway_crossings"
+      }
+    },
+    "vehicle_classes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/vehicle_classes"
+      }
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/zones"
+      }
+    },
+    "od_matrix": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/od_matrix"
+      }
+    },
+    "traffic_demand": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/traffic_demand"
+      }
+    },
+    "traffic_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/traffic_signals"
+      }
+    },
+    "infrastructure_scenarios": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/infrastructure_scenarios"
+      }
+    },
+    "simulation_metrics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/simulation_metrics"
+      }
+    },
+    "data_provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/data_provenance"
+      }
+    },
+    "calibration_status": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/calibration_status"
+      }
+    },
+    "growth_rates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/growth_rates"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "baseline_year",
+    "category",
+    "road_nodes",
+    "road_edges",
+    "lanes",
+    "junctions",
+    "railway_crossings",
+    "vehicle_classes",
+    "zones",
+    "od_matrix",
+    "traffic_demand",
+    "traffic_signals",
+    "infrastructure_scenarios",
+    "simulation_metrics",
+    "data_provenance",
+    "calibration_status",
+    "growth_rates"
+  ],
+  "$defs": {
+    "road_nodes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "x_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "y_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "crs": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zone_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "x_m",
+        "y_m",
+        "crs",
+        "zone_id"
+      ]
+    },
+    "road_edges": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "from_node_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "to_node_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lane_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "corridor_role": {
+          "enum": [
+            "main",
+            "frontage",
+            "access",
+            "other",
+            "unverified"
+          ]
+        },
+        "length_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "speed_limit_m_per_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "capacity_vehicles_per_hour": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "from_node_id",
+        "to_node_id",
+        "lane_ids",
+        "corridor_role",
+        "length_m",
+        "speed_limit_m_per_s",
+        "capacity_vehicles_per_hour"
+      ]
+    },
+    "lanes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "edge_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "width_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "allowed_vehicle_classes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "motorcycle",
+              "car",
+              "bus",
+              "truck",
+              "trailer",
+              "oversize_special"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "edge_id",
+        "index",
+        "width_m",
+        "allowed_vehicle_classes"
+      ]
+    },
+    "junctions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "node_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "incoming_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "outgoing_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "control_type": {
+          "enum": [
+            "signal",
+            "priority",
+            "uncontrolled",
+            "unverified"
+          ]
+        },
+        "signal_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "node_id",
+        "incoming_edge_ids",
+        "outgoing_edge_ids",
+        "control_type",
+        "signal_id"
+      ]
+    },
+    "railway_crossings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "road_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "track_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "closure_event_source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "station_interaction_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "node_ids",
+        "road_edge_ids",
+        "track_count",
+        "closure_event_source_id",
+        "station_interaction_notes"
+      ]
+    },
+    "vehicle_classes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "class": {
+          "enum": [
+            "motorcycle",
+            "car",
+            "bus",
+            "truck",
+            "trailer",
+            "oversize_special"
+          ]
+        },
+        "sumo_vclass": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "length_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "width_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_speed_m_per_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "behavior_profile_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "class",
+        "sumo_vclass",
+        "length_m",
+        "width_m",
+        "max_speed_m_per_s",
+        "behavior_profile_id"
+      ]
+    },
+    "zones": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "boundary_geojson": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entry_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "exit_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "name",
+        "boundary_geojson",
+        "entry_edge_ids",
+        "exit_edge_ids"
+      ]
+    },
+    "od_matrix": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 2026
+        },
+        "origin_zone_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "destination_zone_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vehicle_class_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "period_start": {
+          "type": "string",
+          "minLength": 1
+        },
+        "period_end": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trips": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "year",
+        "origin_zone_id",
+        "destination_zone_id",
+        "vehicle_class_id",
+        "period_start",
+        "period_end",
+        "trips"
+      ]
+    },
+    "traffic_demand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "od_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "departure_profile": {
+          "enum": [
+            "unverified",
+            "observed",
+            "documented_assumption"
+          ]
+        },
+        "vehicles_per_hour": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "period_start": {
+          "type": "string",
+          "minLength": 1
+        },
+        "period_end": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "od_record_id",
+        "departure_profile",
+        "vehicles_per_hour",
+        "period_start",
+        "period_end"
+      ]
+    },
+    "traffic_signals": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "junction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cycle_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "phases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "type": "string",
+                "minLength": 1
+              },
+              "duration_s": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            },
+            "required": [
+              "state",
+              "duration_s"
+            ]
+          }
+        },
+        "offset_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "junction_id",
+        "cycle_s",
+        "phases",
+        "offset_s"
+      ]
+    },
+    "infrastructure_scenarios": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "baseline_dataset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_scenario_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "entity_type": {
+                "enum": [
+                  "road_edges",
+                  "lanes",
+                  "junctions",
+                  "railway_crossings",
+                  "traffic_signals"
+                ]
+              },
+              "entity_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "parameter": {
+                "type": "string",
+                "minLength": 1
+              },
+              "before": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "after": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "provenance_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "entity_type",
+              "entity_id",
+              "parameter",
+              "before",
+              "after",
+              "provenance_id"
+            ]
+          }
+        },
+        "approval_status": {
+          "enum": [
+            "draft",
+            "reviewed",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "name",
+        "baseline_dataset_id",
+        "parent_scenario_id",
+        "changes",
+        "approval_status"
+      ]
+    },
+    "simulation_metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenario_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "network_hash": {
+          "type": "string",
+          "minLength": 1
+        },
+        "demand_hash": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seed": {
+          "type": "integer"
+        },
+        "sumo_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 2026
+        },
+        "interval_start_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "interval_end_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "edge_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "queue_length_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "travel_time_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "density_vehicles_per_km": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "speed_m_per_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "capacity_vehicles_per_hour": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "run_id",
+        "scenario_id",
+        "network_hash",
+        "demand_hash",
+        "seed",
+        "sumo_version",
+        "year",
+        "interval_start_s",
+        "interval_end_s",
+        "edge_id",
+        "queue_length_m",
+        "travel_time_s",
+        "density_vehicles_per_km",
+        "speed_m_per_s",
+        "capacity_vehicles_per_hour"
+      ]
+    },
+    "data_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "source_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "accessed_on": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "survey_period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "spatial_scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "license_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_status": {
+          "enum": [
+            "unverified",
+            "metadata_checked",
+            "abstract_checked",
+            "full_context_checked",
+            "field_verified"
+          ]
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "source_title",
+        "source_uri",
+        "source_year",
+        "accessed_on",
+        "survey_period",
+        "method",
+        "spatial_scope",
+        "license_notes",
+        "verification_status",
+        "limitations"
+      ]
+    },
+    "calibration_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "target_entity_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_entity_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observed_dataset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "validation_dataset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acceptance_criteria": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_on": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "target_entity_type",
+        "target_entity_id",
+        "method",
+        "observed_dataset_id",
+        "validation_dataset_id",
+        "acceptance_criteria",
+        "reviewer",
+        "reviewed_on"
+      ]
+    },
+    "growth_rates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 2027
+        },
+        "vehicle_class_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zone_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "annual_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -1
+        },
+        "rate_unit": {
+          "const": "fraction_per_year"
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "year",
+        "vehicle_class_id",
+        "zone_id",
+        "annual_rate",
+        "rate_unit",
+        "method"
+      ]
+    }
+  }
+}

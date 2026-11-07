@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gedangan:project:0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "project": {
+      "const": "Gedangan Traffic Simulator"
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "milestone": {
+      "const": 1
+    },
+    "baseline_year": {
+      "const": 2026
+    },
+    "mode": {
+      "const": "FOUNDATION"
+    },
+    "engine": {
+      "const": "ENGINE NOT CONNECTED"
+    },
+    "network_path": {
+      "type": "null"
+    },
+    "demand_path": {
+      "type": "null"
+    },
+    "calibration_status": {
+      "const": "not_started"
+    },
+    "growth": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "baseline_year": {
+          "const": 2026
+        },
+        "rates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/growth_rates"
+          }
+        },
+        "missing_rate_policy": {
+          "const": "error"
+        },
+        "rate_unit": {
+          "const": "fraction_per_year"
+        },
+        "dimensions": {
+          "const": [
+            "year",
+            "vehicle_class_id",
+            "zone_id"
+          ]
+        },
+        "formula_future": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "baseline_year",
+        "rates",
+        "missing_rate_policy",
+        "rate_unit",
+        "dimensions",
+        "formula_future"
+      ]
+    },
+    "simulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "seed": {
+          "type": "null"
+        },
+        "step_length_s": {
+          "type": "null"
+        },
+        "network_hash": {
+          "type": "null"
+        },
+        "sumo_version": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "seed",
+        "step_length_s",
+        "network_hash",
+        "sumo_version"
+      ]
+    },
+    "visualization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scene": {
+          "const": "abstract_placeholder_not_geographic"
+        },
+        "pixel_ratio_cap": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1.5
+        },
+        "render_fps_cap": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "external_assets": {
+          "const": false
+        }
+      },
+      "required": [
+        "scene",
+        "pixel_ratio_cap",
+        "render_fps_cap",
+        "external_assets"
+      ]
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "os": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gpu": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vram_gb": {
+          "type": "number",
+          "minimum": 1
+        },
+        "ram_gb": {
+          "type": "number",
+          "minimum": 1
+        },
+        "resolution": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "os",
+        "gpu",
+        "vram_gb",
+        "ram_gb",
+        "resolution"
+      ]
+    }
+  },
+  "required": [
+    "project",
+    "version",
+    "milestone",
+    "baseline_year",
+    "mode",
+    "engine",
+    "network_path",
+    "demand_path",
+    "calibration_status",
+    "growth",
+    "simulation",
+    "visualization",
+    "target"
+  ],
+  "$defs": {
+    "growth_rates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "observed_data",
+            "research_reference",
+            "assumptions",
+            "simulated_results"
+          ]
+        },
+        "provenance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "not_started",
+            "in_progress",
+            "calibrated",
+            "rejected"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 2027
+        },
+        "vehicle_class_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zone_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "annual_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -1
+        },
+        "rate_unit": {
+          "const": "fraction_per_year"
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "provenance_id",
+        "calibration_status",
+        "year",
+        "vehicle_class_id",
+        "zone_id",
+        "annual_rate",
+        "rate_unit",
+        "method"
+      ]
+    }
+  }
+}
